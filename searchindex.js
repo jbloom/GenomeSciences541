@@ -1,0 +1,1 @@
+Search.setIndex({envversion:42,terms:{jess:1,some:1,bloom:1},objtypes:{},objnames:{},filenames:["index","lecture_1"],titles:["Genome Sciences 541","Genome Sciences 541"],objects:{},titleterms:{test:1,lectur:1,genom:[0,1],math:1,scienc:[0,1]}})
