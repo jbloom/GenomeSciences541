@@ -25,7 +25,7 @@ The slides are in the home directory, while the source is in the ``./source/`` s
 
 When this repository is pushed to the ``gh_pages`` branch of the `GenomeSciences541 GitHub`_ repository, the slides will become available on ``GitHub Pages``. 
 
-For example, a file named ``./source/lecture_1.rst`` will compile to ``lecture_1.html`` with the ``make slides`` command, and after the pushing to the `GenomeSciences 541 GitHub`_ repository, the slides will be available for viewing at http://jbloom.github.io/GenomeSciences541/lecture_1.html.
+For example, a file named ``./source/lecture_1.rst`` will compile to ``lecture_1.html`` with the ``make slides`` command, and after the pushing to the `GenomeSciences541 GitHub`_ repository, the slides will be available for viewing at http://jbloom.github.io/GenomeSciences541/lecture_1.html.
 
 Advance through the slides with the arrow keys or space bar.
 
