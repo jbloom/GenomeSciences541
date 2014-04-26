@@ -1,10 +1,12 @@
 ===============================================
-Lecture 1, Genome Sciences 541, `Jesse Bloom`_
+Lecture 1 
 ===============================================
 
-* These lecture notes are available at http://jbloom.github.io/GenomeSciences541/lecture_1.html#1
+* Genome Sciences 541, lecture by `Jesse Bloom`_
 
-* The reading for this lecture is `Zuckerkandl and Pauling 1965`_.
+* These lecture notes are at http://jbloom.github.io/GenomeSciences541/lecture_1.html#1
+
+* The reading for this lecture is :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`.
 
 First slide
 ============
