@@ -1,1 +1,2 @@
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
+.. |Zuckerkandl and Pauling 1965| :download:`Zuckerkandl and Pauling (1965) <https://github.com/jbloom/GenomeSciences541/tree/gh-pages/readings/Zuckerkandl_and_Pauling-1965.pdf>`
