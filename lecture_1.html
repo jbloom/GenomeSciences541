@@ -46,15 +46,86 @@
   <article class="slide level-1" id="lecture-1">
 <h1>Lecture 1</h1>
 <ul class="simple">
-<li>Genome Sciences 541, lecture by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a></li>
-<li>These slides are at <a class="reference external" href="http://jbloom.github.io/GenomeSciences541/lecture_1.html#1">http://jbloom.github.io/GenomeSciences541/lecture_1.html#1</a></li>
-<li>Reading for this lecture is <a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf"><tt class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></tt></a>. Specifically:
-read pages 97 to 114 carefully,
-feel free to skim pages 115 to 147,
-read pages 114 to 152 carefully,
-feel free to skip from 153 to the end.</li>
-<li>The homework for this lecture is at ???</li>
+<li>Genome Sciences 541, <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a></li>
+<li>These slides are at <a class="reference external" href="http://jbloom.github.io/GenomeSciences541/lecture_1.html">http://jbloom.github.io/GenomeSciences541/lecture_1.html</a></li>
+<li>Reading for this lecture is <a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf"><tt class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></tt></a>.
+Read pages 97-114 and 147-152 carefully,
+skim pages 115-146,
+feel free to skip pages 153-end.</li>
+<li>The homework for this lecture is at ???.</li>
 </ul>
+
+</article>
+<article class="slide level-2" id="lecture-1-the-evolution-of-protein-coding-genes">
+<h2>Lecture 1: the evolution of protein-coding genes</h2>
+<ul class="simple">
+<li><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf"><tt class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></tt></a>: one of the first molecular studies of protein evolution</li>
+<li>Structure imposes many constraints</li>
+<li>Very hard to quantitatively understand these constraints</li>
+<li>Sequence divergence <span class="math">\(\ne\)</span> Functional divergence</li>
+<li>A molecular clock?</li>
+</ul>
+
+</article>
+<article class="slide level-3" id="genes-evolve-at-the-level-of-dna-or-sometimes-rna">
+<h3>Genes evolve at the level of DNA (or sometimes RNA)</h3>
+<p>We routinely abstract the complex molecule DNA to strings of letters with little loss of relevant information:</p>
+<div class="highlight-python"><div class="highlight"><pre>atg gtg ctc agc gag gga gaa tgg cag ttg gtt ctg cac gtc ...
+</pre></div>
+</div>
+<p><em>It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.</em> -- <a class="reference external" href="http://www.nature.com/nature/dna50/watsoncrick.pdf">Watson and Crick (1953)</a></p>
+<p><em>The translation from nucleic acid to protein proceeds in a sequential fashion according to a systematic code with relatively simple rules.</em> -- <a class="reference external" href="http://www.nobelprize.org/nobel_prizes/medicine/laureates/1968/nirenberg-lecture.pdf">Nirenberg (1968)</a></p>
+
+</article>
+<article class="slide level-3" id="but-most-selection-is-on-the-protein">
+<h3>But most selection is on the protein</h3>
+<p>The properties of proteins are <strong>not</strong> easily abstracted. Proteins are linear polymers encoded by DNA:</p>
+<div class="highlight-python"><div class="highlight"><pre>atg gtg ctc agc gag gga gaa tgg cag ttg gtt ctg cac gtc ...
+M   V   L   S   E   G   E   W   Q   L   V   L   H   V   ...
+</pre></div>
+</div>
+<p>But proteins derive their relevant properties from their three-dimensional structures.</p>
+<p><em>Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.</em> -- <a class="reference external" href="http://www.chem.uwec.edu/Chem452_Media/pages/readings/media/Kendrew_et_al_1958.pdf">Kendrew et al (1958)</a></p>
+
+</article>
+<article class="slide level-3" id="the-evolution-studied-in-molecular-phylogenetics-is-due-to-both-mutation-and-selection">
+<h3>The evolution studied in molecular phylogenetics is due to both mutation and selection</h3>
+<div class="highlight-python"><div class="highlight"><pre>atg gtg ctc agc gag gga gaa tgg cag ttg gtt ctg cTc gtc ...
+atg gtg ctc agc gag gga gaa tgA cag ttg gtt ctg cac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cag ttg gtt ctg cac gtc ...
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>atg gtg Atc agc gag gga gaa tgg cag ttg gtt ctg cac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg cac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cag ttg gtA ctg cac gtc ...
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>atg gtA ctc agc Cag gga gaa tgg cag ttg gtt ctg cac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg Aac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cTg ttg gtA ctg cac gtc ...
+</pre></div>
+</div>
+<div class="highlight-python"><div class="highlight"><pre>atg atg cAc agc Cag gga gaa tgg cTg ttg gtt ctg cac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg Aac gtc ...
+atg gtg ctc agc Cag gga gaa tgg cTg ttg gtA ctg cac gtc ...
+</pre></div>
+</div>
+
+</article>
+<article class="slide level-3" id="more">
+<h3>More</h3>
+<p>In these lectures (and in most molecular phylogenetics), we consider only point substitutions::
+<a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf"><tt class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></tt></a>  (pages 111-112) suggest:</p>
+<blockquote>
+<div><em>Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule, A deletion or additionin the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.</em></div></blockquote>
+
+</article>
+<article class="slide level-3" id="slide">
+<h3>slide</h3>
+
+</article>
+<article class="slide level-3" id="id1">
+<h3>slide</h3>
 
 </article>
 
