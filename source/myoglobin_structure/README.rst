@@ -20,6 +20,16 @@ Input files
 
     run analyze_protein.py
 
+Running the analysis
+---------------------
+Open `PyMol`_, then at the `PyMol`_ command line type::
+
+    run analyze_protein.py
+
+This command will create a variety of output ``*.png`` files in the subdirectory ``./png_images/``. These include:
+
+    * ``myoglobin_static.png`` : formatted static image of sperm whale myoglobin (`1MBN` PDB file)
+
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
 .. _`Watson and Crick (1953)`: http://www.nature.com/nature/dna50/watsoncrick.pdf
