@@ -2,3 +2,4 @@
 .. _`Watson and Crick (1953)`: http://www.nature.com/nature/dna50/watsoncrick.pdf
 .. _`Nirenberg (1968)`: http://www.nobelprize.org/nobel_prizes/medicine/laureates/1968/nirenberg-lecture.pdf
 .. _`Kendrew et al (1958)`: http://www.chem.uwec.edu/Chem452_Media/pages/readings/media/Kendrew_et_al_1958.pdf
+.. _`Description of the PyMol analysis of sperm whale myoglobin`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/myoglobin_structure

@@ -39,14 +39,26 @@ We routinely abstract the complex molecule DNA to strings of letters with little
 
 But most selection is on the protein
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-The properties of proteins are **not** easily abstracted. Proteins are linear polymers encoded by DNA::
+The properties of proteins are **not** easily abstracted. 
+
+Proteins are linear polymers encoded by DNA::
 
     atg gtg ctc agc gag gga gaa tgg cag ttg gtt ctg cac gtc ...
     M   V   L   S   E   G   E   W   Q   L   V   L   H   V   ...
 
 But proteins derive their relevant properties from their three-dimensional structures.
 
-*Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.* -- `Kendrew et al (1958)`_
+Properties of proteins are not easily abstracted
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: myoglobin_structure/png_images/myoglobin_static.png
+   :width: 61%
+   :align: center
+
+   `Description of the PyMol analysis of sperm whale myoglobin`_
+
+   *Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.* -- `Kendrew et al (1958)`_
+
 
 The evolution studied in molecular phylogenetics is due to both mutation and selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
