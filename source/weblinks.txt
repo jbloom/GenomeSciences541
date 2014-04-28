@@ -6,3 +6,4 @@
 .. _`Analysis of myoglobin homologs`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/myoglobin_homologs
 .. _`"Sickle Cell Anemia, a Molecular Disease" (Pauling et al, 1949)`: http://www.sciencemag.org/content/110/2865/543
 .. _`"A Specific Chemical Difference between Globins of Normal and Sickle-cell Anemia Hemoglobins" (Ingram, 1956)`: http://www.nature.com/nature/journal/v178/n4537/abs/178792a0.html
+.. _`homework 1`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
