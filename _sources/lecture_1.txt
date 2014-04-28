@@ -25,7 +25,7 @@ Lecture 1: the evolution of protein-coding genes
 
 * A molecular clock?
 
-Genes evolve at the level of DNA (or sometimes RNA)
+Genes evolve at the level of DNA (or RNA for some viruses)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We routinely abstract the complex molecule DNA to strings of letters with little loss of relevant information::
 
@@ -282,7 +282,7 @@ We envision mutation as identical across sites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Each nucleotide mutation are equally likely (Jukes-Cantor model)
 
-* Some nucleotide mutations aree likely than others
+* Some nucleotide mutations are likely than others
 
 * On clear observation is that *transition* mutations tend to be more likely than *transversion* mutations
 
@@ -300,14 +300,12 @@ We know that selection is **not** identical across sites
 
    Code /data to produce this figure at `Analysis of myoglobin homologs`_
 
+We know that selection is **not** identical across sites
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+However, as we will see in future lectures, we often are forced to assume that it is identical (or nearly so) across sites.
 
-More
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In these lectures (and in most molecular phylogenetics), we consider only point substitutions::
-:download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`  (pages 111-112) suggest:
-
-    *Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule, A deletion or additionin the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.*
-
+Simulating this process (your homework)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 .. include:: weblinks.txt

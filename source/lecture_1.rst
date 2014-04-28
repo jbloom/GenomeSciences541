@@ -25,7 +25,7 @@ Lecture 1: the evolution of protein-coding genes
 
 * A molecular clock?
 
-Genes evolve at the level of DNA (or sometimes RNA)
+Genes evolve at the level of DNA (or RNA for some viruses)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 We routinely abstract the complex molecule DNA to strings of letters with little loss of relevant information::
 
@@ -274,7 +274,7 @@ We assume that genes can be aligned, and ignore gaps
 
     atg gtg ctc agc Cag gga gaa tgg cTg ttg --- ctg cac gtc ...
 
-The results are therefore dependent on the alignment. We'd think something very different if we aligned the last homolog as::
+The results are therefore dependent on the alignment. We'd get a different evolutionary scenario if we aligned the last homolog as::
 
     atg gtg ctc agc Cag gga gaa tgg cTg ttg CtG cAC --- gtc ...
 
