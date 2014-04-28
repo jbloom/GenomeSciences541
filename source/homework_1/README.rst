@@ -40,13 +40,13 @@ The basic process is as follows:
         <JOBEND>#;
         <ENDFILE>#;
 
-      Then run `FoldX`_ with a command like::
+       Then run `FoldX`_ with a command like::
 
         ./foldx64MacOs -runfile repair_runfile.txt
 
-      This will create the repaired PDB file ``1MBN_repaired.pdb`` for all subsequent steps.
+       This will create the repaired PDB file ``1MBN_repaired.pdb`` for all subsequent steps.
 
-      Initialize the "extra stability" of this protein as :math:`\Delta G_f = 0`
+       Initialize the "extra stability" of this protein as :math:`\Delta G_f = 0`
 
     2) Randomly choose a site in the nucleotide sequence for the myoglobin. Mutate this sequence with :math:`\kappa = 4.0`. Then do the following:
 
