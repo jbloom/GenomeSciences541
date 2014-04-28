@@ -1,0 +1,5 @@
+alignmentfile aligned_proteins.fasta
+translateseqs False
+includestop False
+pseudocounts 0
+outputfile aa_frequencies.txt

@@ -53,6 +53,9 @@
 <li><a class="reference external" href="https://www.python.org/">Python</a>: tested with version 2.7.3</li>
 <li><a class="reference external" href="http://biopython.org/wiki/Main_Page">BioPython</a>: tested with version 1.6.3</li>
 <li><a class="reference external" href="http://probcons.stanford.edu/">probcons</a>: for alignments, tested with version 1.12</li>
+<li><a class="reference external" href="https://github.com/jbloom/phyloExpCM">phyloExpCM</a>: for calculating natural frequencies from alignments. Note that <a class="reference external" href="https://github.com/jbloom/phyloExpCM">phyloExpCM</a> also has some requirements for external programs as described in its documentation.</li>
+<li><a class="reference external" href="https://github.com/jbloom/mapmuts">mapmuts</a>: for calculating natural frequencies from alignments. Note that <a class="reference external" href="https://github.com/jbloom/mapmuts">mapmuts</a> also has some requirements for external programs as described in its documentation.</li>
+<li><a class="reference external" href="http://www.imagemagick.org/script/convert.php">ImageMagick convert</a>: for making JPGs from PDFs.</li>
 </ul>
 
 </article>
@@ -60,11 +63,19 @@
 <h2>Input files</h2>
 <ul class="simple">
 <li><tt class="docutils literal"><span class="pre">./genes/</span></tt> is a subdirectory that contains the coding DNA sequences of a variety of myoglobin homologs.</li>
+<li><tt class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></tt> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> of sperm whale myoglobin renumbered to begin with 1 at the N-terminal methionine and proceed sequentially from there. The original <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> begins with 1 at the second valine, hence the need for renumbering.</li>
+<li><tt class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></tt> gives the results of analyzing <tt class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></tt> with the <a class="reference external" href="http://www.cmbi.ru.nl/hsspsoap/">DSSP webserver</a> to calculate secondary structure and solvent accessibility.</li>
+<li><tt class="docutils literal"><span class="pre">compare_homologs.py</span></tt> is the master <a class="reference external" href="https://www.python.org/">Python</a> script that runs the analysis in this directory.</li>
 </ul>
 
 </article>
 <article class="slide level-2" id="running-the-analysis">
 <h2>Running the analysis</h2>
+<p>To run the analysis, simply type the following at the command line:</p>
+<div class="highlight-python"><div class="highlight"><pre>python compare_homologs.py
+</pre></div>
+</div>
+<p>If you have installed the <a class="reference internal" href="#programs-used">Programs used</a>, this will generate all of the remaining output.</p>
 
 </article>
 

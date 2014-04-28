@@ -72,7 +72,7 @@ Context for reading Zuckerkandl and Pauling (1965)
 They knew the structure of sperm whale myoglobin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. figure:: myoglobin_structure/png_images/myoglobin_static.png
-   :width: 90%
+   :width: 100%
    :align: center
 
    `PyMol analysis of sperm whale myoglobin`_
@@ -125,6 +125,15 @@ Myoglobin homologs
    :literal: 
 
 Sequences at `Analysis of myoglobin homologs`_
+
+Site variability among myoglobin homologs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: myoglobin_homologs/myoglobin_site_preferences_logoplot.jpg
+   :width: 90%
+   :align: center
+
+   Code /data to produce this figure at `Analysis of myoglobin homologs`_
 
 The evolution studied in molecular phylogenetics is due to both mutation and selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

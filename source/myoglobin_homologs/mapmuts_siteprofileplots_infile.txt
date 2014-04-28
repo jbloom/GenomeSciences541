@@ -1,0 +1,9 @@
+sitepreferences aa_frequencies.txt
+outfileprefix myoglobin_
+siterange all
+dsspfile 1MBN_renumbered.dssp
+dsspchain None
+add_rsa True
+add_ss True
+nperline 39
+includestop False
