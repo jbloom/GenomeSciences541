@@ -68,15 +68,15 @@ The basic process is as follows:
             <JOBEND>#;
             <ENDFILE>#;
 
-          In this file, ``1MBN_repaired.pdb`` is the sequence of the starting myoglobin. The file ``individual_list.txt`` is the file that contains the mutation. For instance, if we are mutating leucine 3 to alanine, then it has contents::
+         In this file, ``1MBN_repaired.pdb`` is the sequence of the starting myoglobin. The file ``individual_list.txt`` is the file that contains the mutation. For instance, if we are mutating leucine 3 to alanine, then it has contents::
 
             L3A;
 
-          Run `FoldX`_ using::
+         Run `FoldX`_ using::
         
             ./foldx64MacOs -runfile mutate_runfile.txt
 
-          An output file called ``Average_mutant1`` will be created. The last line of this file contains the :math:`\Delta \Delta G` of the mutation as the third entry::
+         An output file called ``Average_mutant1`` will be created. The last line of this file contains the :math:`\Delta \Delta G` of the mutation as the third entry::
 
             1MBN_repaired_1 0   1.82741 0.0879676   0.823098    1.73246 0.382185    -1.26706    3.13049 -0.119406   -1.93645    -0.0983107  0   0   0   -0.885727   -0.603938   -0.0218432  0   0   0   0   -4.44089e-16    0
 
