@@ -14,7 +14,9 @@ Programs used
 Input files
 ------------------------------------------
 
-* ``1MBN.pdb`` is PDB file `1MBN` containing the crystal structure of sperm whale myoglobin.
+* ``1MBN.pdb`` is PDB file `1MBN`_ containing the crystal structure of sperm whale myoglobin.
+
+* ``1MYT.pdb`` is PDB file `1MYT`_ containing the crystal strucure of yellowfin tuna myoglobin.
 
 * ``analyze_protein.py`` is a `Python`_ script to be run in `PyMol`_ to label the protein structure and generate images. Run by opening `PyMol`_ and then in `PyMol`_, typing::
 
@@ -26,9 +28,7 @@ Open `PyMol`_, then at the `PyMol`_ command line type::
 
     run analyze_protein.py
 
-This command will create a variety of output ``*.png`` files in the subdirectory ``./png_images/``. These include:
-
-    * ``myoglobin_static.png`` : formatted static image of sperm whale myoglobin (`1MBN` PDB file)
+This command will create a variety of output ``*.png`` files in the subdirectory ``./png_images/``. 
 
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
@@ -38,3 +38,4 @@ This command will create a variety of output ``*.png`` files in the subdirectory
 .. _`1MBN`: http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN
 .. _`Python`: https://www.python.org/
 .. _`PyMol`: http://www.pymol.org/
+.. _`1MYT`: http://www.pdb.org/pdb/explore/explore.do?structureId=1MYT

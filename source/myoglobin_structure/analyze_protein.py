@@ -19,7 +19,7 @@ def main():
         os.mkdir(image_dir)
 
     # load molecule 
-    cmd.delete('everything')
+    cmd.delete('all')
     cmd.bg_color('white')
     cmd.load('1MBN.pdb', 'myoglobin')
 
@@ -47,6 +47,22 @@ def main():
             '101.168441772,  141.655395508,    0.000000000')
     cmd.ray(1.5 * 1024, 1.5 * 768)
     cmd.png('%s/myoglobin_static.png' % image_dir)
+
+    # load and superimpose tuna myoglobin
+    cmd.load('1MYT.pdb', 'tuna_myoglobin')
+    cmd.hide('everything', 'tuna_myoglobin')
+    cmd.show('cartoon', 'tuna_myoglobin')
+    cmd.color('orange', 'tuna_myoglobin')
+    cmd.super('tuna_myoglobin', 'myoglobin')
+    cmd.set_view(\
+            '-0.384154022,    0.878374994,    0.284453362,' +\
+            '-0.627070785,   -0.474350274,    0.617919803,' +\
+            '0.677684247,    0.059000824,    0.733017325,' +\
+            '0.000000000,    0.000000000, -120.189903259,' +\
+            '13.839839935,   20.989685059,    7.839759827,' +\
+            '101.168441772,  141.655395508,    0.000000000')
+    cmd.ray(1.5 * 1024, 1.5 * 768)
+    cmd.png('%s/sperm_whale_tuna_myoglobin_overlay_static.png' % image_dir)
 
 
 
