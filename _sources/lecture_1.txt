@@ -11,7 +11,7 @@ Lecture 1
   skim pages 115-146,
   feel free to skip pages 153-end.
 
-* The homework for this lecture is at ???.
+* The homework for this lecture is at `homework 1`_.
 
 Lecture 1: the evolution of protein-coding genes
 ==================================================
@@ -274,7 +274,7 @@ We assume that genes can be aligned, and ignore gaps
 
     atg gtg ctc agc Cag gga gaa tgg cTg ttg --- ctg cac gtc ...
 
-The results are therefore dependent on the alignment. We'd think something very different if we aligned the last homolog as::
+The results are therefore dependent on the alignment. We'd get a different evolutionary scenario if we aligned the last homolog as::
 
     atg gtg ctc agc Cag gga gaa tgg cTg ttg CtG cAC --- gtc ...
 
@@ -307,5 +307,6 @@ However, as we will see in future lectures, we often are forced to assume that i
 Simulating this process (your homework)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+`homework 1`_
 
 .. include:: weblinks.txt

@@ -11,7 +11,7 @@ Lecture 1
   skim pages 115-146,
   feel free to skip pages 153-end.
 
-* The homework for this lecture is at ???.
+* The homework for this lecture is at `homework 1`_.
 
 Lecture 1: the evolution of protein-coding genes
 ==================================================
@@ -307,5 +307,6 @@ However, as we will see in future lectures, we often are forced to assume that i
 Simulating this process (your homework)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+`homework 1`_
 
 .. include:: weblinks.txt
