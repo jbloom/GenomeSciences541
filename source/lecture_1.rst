@@ -55,7 +55,7 @@ Properties of proteins are not easily abstracted
    :width: 61%
    :align: center
 
-   `Description of the PyMol analysis of sperm whale myoglobin`_
+   `PyMol analysis of sperm whale myoglobin`_
 
    *Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.* -- `Kendrew et al (1958)`_
 
@@ -75,15 +75,56 @@ They knew the structure of sperm whale myoglobin
    :width: 90%
    :align: center
 
-   `Description of the PyMol analysis of sperm whale myoglobin`_
+   `PyMol analysis of sperm whale myoglobin`_
 
    Structure had been determined by `Kendrew et al (1958)`_
 
 They knew that single mutations could potentially have large biological consequences
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+::
 
-They knew the sequences of a variety of closely related globins
+    MVHLTPEEKSAVT...
+    MVHLTPvEKSAVT...
+
+
+`"Sickle Cell Anemia, a Molecular Disease" (Pauling et al, 1949)`_
+
+`"A Specific Chemical Difference between Globins of Normal and Sickle-cell Anemia Hemoglobins" (Ingram, 1956)`_
+
+
+They knew the sequences of a variety of homologous globins
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* sperm whale myoglobin
+
+* human myoglobin
+
+* human hemoglobin :math:`\alpha`, :math:`\beta`, :math:`\gamma`, and :math:`\delta` chains
+
+* horse hemoglobin :math:`\alpha` and :math:`\beta` chains
+
+* cattle hemoglobin :math:`\alpha` and :math:`\beta` chains
+
+* cattle fetal hemoglobin chain
+
+* pig hemoglobin :math:`\alpha` and :math:`\beta` chains
+
+* gorilla :math:`\alpha` and :math:`\beta` chains
+
+* carp hemoglobin :math:`\alpha` chain
+
+* lamprey hemoglobin chain
+
+Analysis of myoglobin homologs
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+We will perform an analysis similar to that of Zuckerkandl and Pauling, and look at some of the conclusions that they draw.
+
+Myoglobin homologs
+~~~~~~~~~~~~~~~~~~~
+
+.. include:: myoglobin_homologs/aligned_proteins.fasta
+   :literal: 
+
+Sequences at `Analysis of myoglobin homologs`_
 
 The evolution studied in molecular phylogenetics is due to both mutation and selection
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -117,11 +158,6 @@ In these lectures (and in most molecular phylogenetics), we consider only point 
 :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`  (pages 111-112) suggest:
 
     *Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule, A deletion or additionin the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.*
-
-slide
-~~~~~~~~~~~
-slide
-~~~~~~~~~~~
 
 
 
