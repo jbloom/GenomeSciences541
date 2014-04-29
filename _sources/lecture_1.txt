@@ -178,10 +178,18 @@ Different proteins evolve at different rates
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
-Zuckerkandl and Pauling propose a molecular clock
+Zuckerkandl and Pauling propose a molecular clock 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. figure:: images/conclusions.png
-   :width: 65%
+.. figure:: images/conclusions_1.png
+   :width: 100%
+   :align: center
+
+   :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
+
+Zuckerkandl and Pauling propose a molecular clock 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. figure:: images/conclusions_2.png
+   :width: 100%
    :align: center
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`

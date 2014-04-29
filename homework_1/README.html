@@ -122,10 +122,12 @@
 </div>
 <p>So here, <span class="math">\(\Delta \Delta G = 1.82741\)</span>. This is the effect of making the mutation L3A to the protein in <tt class="docutils literal"><span class="pre">1MBN_repaired.pdb</span></tt>. Now compute the stability of the new protein as <span class="math">\(\Delta G_{\rm{new}} = \Delta G_f + \Delta \Delta G\)</span>. If <span class="math">\(\Delta G_{\rm{new}} &gt; 0\)</span>, then the mutant protein is unstable, and so the mutation is eliminated by selection. In that case, retain the unmutated sequence. Otherwise, the mutant protein is viable, and the mutation fixes. In this case, update the stability to the new value of <span class="math">\(\Delta G_{\rm{new}\)</span> and take the new mutant structure in <tt class="docutils literal"><span class="pre">1MBN_repaired_1.pdb</span></tt> to be the new parent protein (this structure should have <em>L3A</em>).</p>
 <p>So by this process, stabilizing mutations will always fix, and destabilizing mutations will sometimes fix (if the parent already has enough stability).</p>
+<p>Remember, it is <strong>essential</strong> that after each accepted nonsynonymous mutation you need to update the parental protein structure to be the new one created by <a class="reference external" href="http://foldx.crg.es/">FoldX</a>, and also to update the stability to the new one after taking into account the effect of the mutation.</p>
 </li>
 </ul>
 </li>
-<li><p class="first">Repeat this process until the protein sequences have diverged to 60% identity from the initial sperm whale myoglobin protein sequence. Keep track of the number of steps, the number of fixed synonymous mutations, the number of fixed nonsynonymous mutations, the number of rejected nonsynonymous mutations, and the number of fixed transitions versus transversions. Also keep track of the coding nucleotide sequences at each step.</p>
+<li><p class="first">Repeat this process until the protein sequences have diverged to 60% identity from the initial sperm whale myoglobin protein sequence. Keep track of the number of steps, the number of fixed synonymous mutations, the number of fixed nonsynonymous mutations, the number of rejected nonsynonymous mutations, and the number of fixed transitions versus transversions.</p>
+<p>Also keep track of the coding nucleotide sequences at each step. This last part is important. You should have a file giving the coding nucleotide sequence at each step. Sometimes this sequence will change (synonymous or accepted nonsynonymous mutation) and sometimes it will be the same for consecutive steps (rejected mutation). In the next homework, we will use this file.</p>
 </li>
 </ol>
 </div></blockquote>
@@ -135,11 +137,11 @@
 <h2>Questions</h2>
 <ol class="arabic simple">
 <li>Turn in the script that you use to perform the analysis.</li>
-<li>How many steps did it take to reach 60% protein sequence divergence from the initial perm whale myoglobin sequence? Make a plot of protein sequence divergence versus number of steps.</li>
-<li>Make a plot of the stability of the protein as a function of the number of steps. This stability should generally be slightly less than zero.</li>
-<li>What was the fraction of all nonsynonymous mutations that fixed? This fraction of nonsynonymous mutations is often referred to as the ratio <span class="math">\(\omega\)</span>.</li>
+<li>How many steps did it take to reach 60% protein sequence divergence from the initial sperm whale myoglobin sequence? Make a plot of protein sequence divergence versus number of steps.</li>
+<li>Make a plot of the stability of the protein as a function of the number of steps. This stability should generally be slightly less than zero, and should fluctuate in this range due to stabilizing and destabilizing mutations.</li>
+<li>What was the fraction of all attempted nonsynonymous mutations that fixed? This fraction of nonsynonymous mutations is often referred to as the ratio <span class="math">\(\omega\)</span>.</li>
 <li>Make a plot of the sequence divergence at the first, second, and third codon positions versus the number of steps. Does the sequence diverge faster at some codon positions than others? Why?</li>
-<li>If all mutations fixed, how would you expect the ratio of transitions to compare to that of transversions? Keep in mind that <span class="math">\(\kappa = 4.0\)</span>, but that there are more transversions than transitions. What was the actual ration of transitions to transversions? Is this higher or lower than the expectation? If it seems substantially different, do you have any ideas why?</li>
+<li>If all mutations fixed, how would you expect the ratio of transitions to compare to that of transversions? Keep in mind that <span class="math">\(\kappa = 4.0\)</span>, but that there are more transversions than transitions. What was the actual ratio of transitions to transversions? Is this higher or lower than the expectation? If it seems substantially different, do you have any ideas why?</li>
 </ol>
 
 </article>
