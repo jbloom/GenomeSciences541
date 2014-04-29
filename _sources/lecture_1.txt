@@ -60,7 +60,7 @@ Properties of proteins are not easily abstracted
    *Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.* -- `Kendrew et al (1958)`_
 
 Context for reading Zuckerkandl and Pauling (1965)
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. figure:: images/Zuckerkandl_and_Pauling-1965.png
    :width: 90%
@@ -306,7 +306,38 @@ However, as we will see in future lectures, we often are forced to assume that i
 
 Simulating this process (your homework)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In `homework 1`_, you will simulate the evolution of myoglobin.
 
-`homework 1`_
+You will start with the coding sequence for sperm whale myoglobin, and introduce random nucleotide mutations. Mutations that alter the protein sequence will be subjected to purifying selection as modeled by the `FoldX energy function`_.
+
+The output of these simulations will be set of simulated evolved sequences which we will use for the inferences in the remaining lectures.
+
+Inference
+~~~~~~~~~~~~~
+We can understand the inferences that we will try to make from :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`:
+
+*There may thus exist a molecular evolutionary clock.*
+
+Specifically, we want to estimate how many substitutions occurred (steps in your homework) from the observed sequence divergence.
+
+:download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>` present a very crude way to make these inferences. Today we'll discuss their approach; next lecture we'll start doing better.
+
+Inference
+~~~~~~~~~~
+
+.. figure:: images/inference.png
+   :align: center
+   :width: 100%
+
+   :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>` 
+
+Inference
+~~~~~~~~~~
+
+.. figure:: images/inference_plot.png
+   :align: center
+   :width: 80%
+
+   :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>` 
 
 .. include:: weblinks.txt
