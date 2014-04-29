@@ -84,22 +84,26 @@ The basic process is as follows:
 
          So by this process, stabilizing mutations will always fix, and destabilizing mutations will sometimes fix (if the parent already has enough stability).
 
-    3) Repeat this process until the protein sequences have diverged to 60% identity from the initial sperm whale myoglobin protein sequence. Keep track of the number of steps, the number of fixed synonymous mutations, the number of fixed nonsynonymous mutations, the number of rejected nonsynonymous mutations, and the number of fixed transitions versus transversions. Also keep track of the coding nucleotide sequences at each step.
+         Remember, it is **essential** that after each accepted nonsynonymous mutation you need to update the parental protein structure to be the new one created by `FoldX`_, and also to update the stability to the new one after taking into account the effect of the mutation.
+
+    3) Repeat this process until the protein sequences have diverged to 60% identity from the initial sperm whale myoglobin protein sequence. Keep track of the number of steps, the number of fixed synonymous mutations, the number of fixed nonsynonymous mutations, the number of rejected nonsynonymous mutations, and the number of fixed transitions versus transversions. 
+    
+       Also keep track of the coding nucleotide sequences at each step. This last part is important. You should have a file giving the coding nucleotide sequence at each step. Sometimes this sequence will change (synonymous or accepted nonsynonymous mutation) and sometimes it will be the same for consecutive steps (rejected mutation). In the next homework, we will use this file.
 
 
 Questions
 -------------
 1) Turn in the script that you use to perform the analysis.
 
-2) How many steps did it take to reach 60% protein sequence divergence from the initial perm whale myoglobin sequence? Make a plot of protein sequence divergence versus number of steps.
+2) How many steps did it take to reach 60% protein sequence divergence from the initial sperm whale myoglobin sequence? Make a plot of protein sequence divergence versus number of steps.
 
-3) Make a plot of the stability of the protein as a function of the number of steps. This stability should generally be slightly less than zero.
+3) Make a plot of the stability of the protein as a function of the number of steps. This stability should generally be slightly less than zero, and should fluctuate in this range due to stabilizing and destabilizing mutations.
 
-4) What was the fraction of all nonsynonymous mutations that fixed? This fraction of nonsynonymous mutations is often referred to as the ratio :math:`\omega`.
+4) What was the fraction of all attempted nonsynonymous mutations that fixed? This fraction of nonsynonymous mutations is often referred to as the ratio :math:`\omega`.
 
 5) Make a plot of the sequence divergence at the first, second, and third codon positions versus the number of steps. Does the sequence diverge faster at some codon positions than others? Why?
 
-6) If all mutations fixed, how would you expect the ratio of transitions to compare to that of transversions? Keep in mind that :math:`\kappa = 4.0`, but that there are more transversions than transitions. What was the actual ration of transitions to transversions? Is this higher or lower than the expectation? If it seems substantially different, do you have any ideas why?
+6) If all mutations fixed, how would you expect the ratio of transitions to compare to that of transversions? Keep in mind that :math:`\kappa = 4.0`, but that there are more transversions than transitions. What was the actual ratio of transitions to transversions? Is this higher or lower than the expectation? If it seems substantially different, do you have any ideas why?
 
 
 
