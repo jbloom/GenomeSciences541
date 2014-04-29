@@ -294,7 +294,7 @@ We envision mutation as identical across sites
 
 * On clear observation is that *transition* mutations tend to be more likely than *transversion* mutations
 
-    - *transitions*: purine to purine (:math:`A \leftrightarrow G`), pyrimidine to pyrimidine (:math:`C \leftrightarrow G`)
+    - *transitions*: purine to purine (:math:`A \leftrightarrow G`), pyrimidine to pyrimidine (:math:`C \leftrightarrow T`)
 
     - *transversions*: purine to pyrimidine or pyrimidine to purine (:math:`A\leftrightarrow C`, :math:`A\leftrightarrow T`, :math:`G\leftrightarrow T`, :math:`G\leftrightarrow C`)
 
