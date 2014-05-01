@@ -6,7 +6,7 @@ Lecture 2
 
 * These slides are at http://jbloom.github.io/GenomeSciences541/lecture_2.html
 
-* The lecture was done on the board. Here are the :download:`hand-written notes <lecture_2_notes.pdf>`.
+* The lecture was done on the board. Here are the :download:`hand-written notes <readings/lecture_2_notes.pdf>`.
 
 * Here is the `Python script used for the mini-simulation in lecture 2`_.
 
