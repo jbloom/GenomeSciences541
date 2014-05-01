@@ -46,6 +46,8 @@ The basic process is as follows:
 
        This will create the repaired PDB file ``1MBN_repaired.pdb`` for all subsequent steps.
 
+       Note that running `FoldX`_ requires that you have the ``rotabase.txt`` file (distributed with `FoldX`_) in the current directory.
+
        Initialize the "extra stability" of this protein as :math:`\Delta G_f = 0`
 
     2) Randomly choose a site in the nucleotide sequence for the myoglobin. Mutate this sequence with :math:`\kappa = 4.0`. Then do the following:
