@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Homework 2 &mdash; Genome Sciences 541 2014.04.17 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/slides.css" type="text/css" />
+    
+
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2014.04.17',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/common.js"></script>
+    <script type="text/javascript" src="../_static/slides.js"></script>
+    <script type="text/javascript" src="../_static/sync.js"></script>
+    <script type="text/javascript" src="../_static/controller.js"></script>
+    <script type="text/javascript" src="../_static/init.js"></script>
+    
+    <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="../index.html" /> 
+  </head>
+  <body>
+
+<section
+   id="slide_container"
+   class='slides layout-regular'>
+
+
+  <article class="slide level-1" id="homework-2">
+<h1>Homework 2</h1>
+<p>Homework 2 for Genome Sciences 541, assigned by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a>.</p>
+<p>This homework is due on May 13, 2014.</p>
+
+</article>
+<article class="slide level-2" id="what-you-need">
+<h2>What you need</h2>
+<ul class="simple">
+<li>You first need to have completed <a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1">homework 1</a>.</li>
+<li>You need a program that can be used to compute matrix exponentials. One such program is <tt class="docutils literal"><span class="pre">scipy</span></tt>, see for example <a class="reference external" href="http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.linalg.expm.html">http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.linalg.expm.html</a></li>
+</ul>
+
+</article>
+<article class="slide level-2" id="question-1">
+<h2>Question 1</h2>
+<p>Compute the maximum likelihood Jukes-Cantor distance from the starting sequence as a function of the number of simulation steps for your simulations in <a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1">homework 1</a>.
+Do this for the full sequences and the first, second, and third codon positions separately.
+Recall that the estimate of the Jukes-Cantor distance is <span class="math">\(t = \frac{-3}{4\mu} \ln\left(\frac{3}{4 p - 1}\right)\)</span> where <span class="math">\(p\)</span> is the pairwise sequence divergence. We will use units of time such that <span class="math">\(\mu = 1\)</span>.
+If the Jukes-Cantor estimate is accurate, then the estimated distance should scale linearly with the number of simulation steps. Does this happen? Why or why not?</p>
+
+</article>
+<article class="slide level-2" id="question-2-background">
+<h2>Question 2 (background)</h2>
+<p>The Kimura 2-paramer model adds a single parameter <span class="math">\(\kappa\)</span> to the Jukes Cantor model. The transition matrix <span class="math">\(\mathbf{P}\)</span> for this model is as follows, where nucleotides are indexed in alphabetical order (A, C, G, T) and matrix entry <span class="math">\(P_{ij}\)</span> is the rate going from <span class="math">\(i\)</span> to <span class="math">\(j\)</span>. Note that <span class="math">\(\mu\)</span> has been defined such that most of the matrix elements are one.</p>
+<div class="math">
+\[\begin{split}\mathbf{P} = \left[\begin{array}{cccc}
+             -\left(2 + \kappa\right) &amp; 1 &amp; 1 &amp; \kappa \\
+             1 &amp; -\left(2 + \kappa\right) &amp; \kappa &amp; 1 \\
+             1 &amp; \kappa &amp; -\left(2 + \kappa\right) &amp; 1 \\
+             \kappa &amp; 1 &amp; 1 &amp; -\left(2 + \kappa\right) \\
+             \end{array} \right]\end{split}\]</div>
+
+</article>
+<article class="slide level-2" id="question-2-more-background">
+<h2>Question 2 (more background)</h2>
+<p>With the definition on the previous slide, let <span class="math">\(\mathbf{p_0}\)</span> be the initial probability distribution. The probability distribution after time <span class="math">\(t\)</span> is then <span class="math">\(\mathbf{p}\left(t\right) = \mathbf{p_0} \exp\left(t \mathbf{P}\right)\)</span> where we are using units of time so that <span class="math">\(\mu = 1\)</span>.</p>
+<p>So to get the probability that a site changes from A to C in time <span class="math">\(t\)</span>, set <span class="math">\(\mathbf{p_0} = \left(1, 0, 0, 0\right)\)</span> and then compute element 2 of <span class="math">\(\mathbf{p}\left(t\right)\)</span>. The probability the site changes from A to C is likewise element 3 of <span class="math">\(\mathbf{p}\left(t\right)\)</span>, etc.</p>
+
+</article>
+<article class="slide level-2" id="question-2">
+<h2>Question 2</h2>
+<p>Using a value of <span class="math">\(\kappa = 4\)</span> (the one from your simulation), compute the maximum likelihood distance from your initial sequence to the sequence after 100 evolutionary steps. You no longer have an analytical formula for <span class="math">\(t\)</span> (one is possible but we haven't solved for it), so you can just try testing values of <span class="math">\(t\)</span> taking very small steps to find the maximum value. How does the likelihood with the Kimura 2-parameter model compare to the likelihood for the same pair of sequences using the Jukes-Cantor model?</p>
+
+</article>
+
+
+</section>
+
+<section id="slide_notes">
+
+</section>
+
+  </body>
+</html>
