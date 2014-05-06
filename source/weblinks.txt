@@ -9,3 +9,4 @@
 .. _`homework 1`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
 .. _`FoldX energy function`: http://foldx.crg.es/manual1.jsp
 .. _`Python script used for the mini-simulation in lecture 2`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/scripts/simulate_evolution.py
+.. _`homework 2`: http://jbloom.github.io/GenomeSciences541/homework_2/homework_2.html
