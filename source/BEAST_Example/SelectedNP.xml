@@ -188,57 +188,38 @@
 	</strictClockBranchRates>
 
 	<!-- The HKY substitution model (Hasegawa, Kishino & Yano, 1985)             -->
-	<HKYModel id="CP1+2.hky">
+	<HKYModel id="hky">
 		<frequencies>
 			<frequencyModel dataType="nucleotide">
+				<alignment idref="alignment"/>
 				<frequencies>
-					<parameter id="CP1+2.frequencies" value="0.25 0.25 0.25 0.25"/>
+					<parameter id="frequencies" dimension="4"/>
 				</frequencies>
 			</frequencyModel>
 		</frequencies>
 		<kappa>
-			<parameter id="CP1+2.kappa" value="2.0" lower="0.0"/>
-		</kappa>
-	</HKYModel>
-
-	<!-- The HKY substitution model (Hasegawa, Kishino & Yano, 1985)             -->
-	<HKYModel id="CP3.hky">
-		<frequencies>
-			<frequencyModel dataType="nucleotide">
-				<frequencies>
-					<parameter id="CP3.frequencies" value="0.25 0.25 0.25 0.25"/>
-				</frequencies>
-			</frequencyModel>
-		</frequencies>
-		<kappa>
-			<parameter id="CP3.kappa" value="2.0" lower="0.0"/>
+			<parameter id="kappa" value="2.0" lower="0.0"/>
 		</kappa>
 	</HKYModel>
 
 	<!-- site model                                                              -->
 	<siteModel id="CP1+2.siteModel">
 		<substitutionModel>
-			<HKYModel idref="CP1+2.hky"/>
+			<HKYModel idref="hky"/>
 		</substitutionModel>
 		<relativeRate>
 			<parameter id="CP1+2.mu" value="1.0" lower="0.0"/>
 		</relativeRate>
-		<gammaShape gammaCategories="4">
-			<parameter id="CP1+2.alpha" value="0.5" lower="0.0"/>
-		</gammaShape>
 	</siteModel>
 
 	<!-- site model                                                              -->
 	<siteModel id="CP3.siteModel">
 		<substitutionModel>
-			<HKYModel idref="CP3.hky"/>
+			<HKYModel idref="hky"/>
 		</substitutionModel>
 		<relativeRate>
 			<parameter id="CP3.mu" value="1.0" lower="0.0"/>
 		</relativeRate>
-		<gammaShape gammaCategories="4">
-			<parameter id="CP3.alpha" value="0.5" lower="0.0"/>
-		</gammaShape>
 	</siteModel>
 
 	<compoundParameter id="allMus">
@@ -265,22 +246,7 @@
 	<!-- Define operators                                                        -->
 	<operators id="operators" optimizationSchedule="default">
 		<scaleOperator scaleFactor="0.75" weight="0.1">
-			<parameter idref="CP1+2.kappa"/>
-		</scaleOperator>
-		<scaleOperator scaleFactor="0.75" weight="0.1">
-			<parameter idref="CP3.kappa"/>
-		</scaleOperator>
-		<deltaExchange delta="0.01" weight="0.1">
-			<parameter idref="CP1+2.frequencies"/>
-		</deltaExchange>
-		<deltaExchange delta="0.01" weight="0.1">
-			<parameter idref="CP3.frequencies"/>
-		</deltaExchange>
-		<scaleOperator scaleFactor="0.75" weight="0.1">
-			<parameter idref="CP1+2.alpha"/>
-		</scaleOperator>
-		<scaleOperator scaleFactor="0.75" weight="0.1">
-			<parameter idref="CP3.alpha"/>
+			<parameter idref="kappa"/>
 		</scaleOperator>
 		<deltaExchange delta="0.75" parameterWeights="999 499" weight="2">
 			<parameter idref="allMus"/>
@@ -320,32 +286,17 @@
 	</operators>
 
 	<!-- Define MCMC                                                             -->
-	<mcmc id="mcmc" chainLength="10000000" autoOptimize="true" operatorAnalysis="SelectedNP.ops">
+	<mcmc id="mcmc" chainLength="500000" autoOptimize="true" operatorAnalysis="SelectedNP.ops">
 		<posterior id="posterior">
 			<prior id="prior">
-				<logNormalPrior mean="1.0" stdev="1.25" offset="0.0" meanInRealSpace="false">
-					<parameter idref="CP1+2.kappa"/>
-				</logNormalPrior>
-				<logNormalPrior mean="1.0" stdev="1.25" offset="0.0" meanInRealSpace="false">
-					<parameter idref="CP3.kappa"/>
-				</logNormalPrior>
+				<exponentialPrior mean="1.0" offset="0.0">
+					<parameter idref="kappa"/>
+				</exponentialPrior>
 				<exponentialPrior mean="1.0" offset="0.0">
 					<parameter idref="CP1+2.mu"/>
 				</exponentialPrior>
 				<exponentialPrior mean="1.0" offset="0.0">
 					<parameter idref="CP3.mu"/>
-				</exponentialPrior>
-				<uniformPrior lower="0.0" upper="1.0">
-					<parameter idref="CP1+2.frequencies"/>
-				</uniformPrior>
-				<uniformPrior lower="0.0" upper="1.0">
-					<parameter idref="CP3.frequencies"/>
-				</uniformPrior>
-				<exponentialPrior mean="0.5" offset="0.0">
-					<parameter idref="CP1+2.alpha"/>
-				</exponentialPrior>
-				<exponentialPrior mean="0.5" offset="0.0">
-					<parameter idref="CP3.alpha"/>
 				</exponentialPrior>
 				<exponentialPrior mean="1.0" offset="0.0">
 					<parameter idref="clock.rate"/>
@@ -388,12 +339,7 @@
 			<likelihood idref="likelihood"/>
 			<parameter idref="treeModel.rootHeight"/>
 			<parameter idref="constant.popSize"/>
-			<parameter idref="CP1+2.kappa"/>
-			<parameter idref="CP3.kappa"/>
-			<parameter idref="CP1+2.frequencies"/>
-			<parameter idref="CP3.frequencies"/>
-			<parameter idref="CP1+2.alpha"/>
-			<parameter idref="CP3.alpha"/>
+			<parameter idref="kappa"/>
 			<compoundParameter idref="allMus"/>
 			<parameter idref="clock.rate"/>
 			<treeLikelihood idref="CP1+2.treeLikelihood"/>
