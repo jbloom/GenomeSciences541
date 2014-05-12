@@ -39,7 +39,7 @@ So to get the probability that a site changes from A to C in time :math:`t`, set
 
 Question 2
 ----------
-Using a value of :math:`\kappa = 4` (the one from your simulation), compute the maximum likelihood distance from your initial sequence to the sequence after 100 evolutionary steps. You no longer have an analytical formula for :math:`t` (one is possible but we haven't solved for it), so you can just test values of :math:`t` taking very small steps to find the maximum value. How does the maximum likelihood with the Kimura 2-parameter model compare to the maximum likelihood for the same pair of sequences using the Jukes-Cantor model? Note that you do **not** need to compare the estimated value of :math:`t` -- rather, the comparison is between the maximum likelihood value itself for the two models (i.e. which fits better).
+Using :math:`\kappa = 4` (the value from your simulation), compute the maximum likelihood distance from your initial sequence to the sequence after 100 steps. You no longer have an analytical formula for :math:`t` (one is possible but we haven't solved for it), so you can just test values of :math:`t` taking very small steps to find the maximum value. How does the maximum likelihood with the Kimura 2-parameter model compare to the maximum likelihood for the same pair of sequences using the Jukes-Cantor model? Note that you do **not** need to compare the estimated value of :math:`t` -- rather, the comparison is between the maximum likelihood value itself for the two models (i.e. which fits better).
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
 .. _`homework 1`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
