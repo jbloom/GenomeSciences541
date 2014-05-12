@@ -97,7 +97,7 @@ Questions
 -------------
 1) Turn in the script that you use to perform the analysis.
 
-2) How many steps did it take to reach 60% protein sequence divergence from the initial sperm whale myoglobin sequence? Make a plot of protein sequence divergence versus number of steps.
+2) How many steps did it take to reach 60% protein sequence identity (40% sequence divergence) from the initial sperm whale myoglobin sequence? Make a plot of protein sequence divergence versus number of steps.
 
 3) Make a plot of the stability of the protein as a function of the number of steps. This stability should generally be slightly less than zero, and should fluctuate in this range due to stabilizing and destabilizing mutations.
 
