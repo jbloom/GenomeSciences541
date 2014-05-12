@@ -35,7 +35,7 @@ Question 2 (more background)
 ------------------------------- 
 With the definition on the previous slide, let :math:`\mathbf{p_0}` be the initial probability distribution. The probability distribution after time :math:`t` is then :math:`\mathbf{p}\left(t\right) = \mathbf{p_0} \exp\left(t \mathbf{P}\right)` where we are using units of time so that :math:`\mu = 1`.
 
-So to get the probability that a site changes from A to C in time :math:`t`, set :math:`\mathbf{p_0} = \left(1, 0, 0, 0\right)` and then compute element 2 of :math:`\mathbf{p}\left(t\right)`. The probability the site changes from A to C is likewise element 3 of :math:`\mathbf{p}\left(t\right)`, etc.
+So to get the probability that a site changes from A to C in time :math:`t`, set :math:`\mathbf{p_0} = \left(1, 0, 0, 0\right)` and then compute element 2 of :math:`\mathbf{p}\left(t\right)`. The probability the site changes from A to G is likewise element 3 of :math:`\mathbf{p}\left(t\right)`, etc.
 
 Question 2
 ----------
