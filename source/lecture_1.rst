@@ -158,7 +158,7 @@ Structure is highly conserved
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
 This observation has stood the test of time. In fact, sequences with as little as 30-35% identity generally have
-very similar structures. See `Chothia and Lesk (1984) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1166865/?page=1>`_
+very similar structures. See `Chothia and Lesk (1984) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1166865/?page=1>`_ and `Sander and Schneider (1991) <http://cbio.mskcc.org/publications/papers/sander/038.pdf>`_.
 
 Structure is highly conserved
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -193,6 +193,16 @@ Zuckerkandl and Pauling propose a molecular clock
    :align: center
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
+
+Important implications
+~~~~~~~~~~~~~~~~~~~~~~~~
+* The extent of sequence change can be used to reconstruct evolutionary relationships (*molecular phylogenetics*)
+
+* However, the constant background sequence change can make it difficult to pinpoint biologically important changes:
+
+    - *Positive selection* : for instance, take a look at `nextflu <http://nextflu.org/H3N2/>`_
+
+    - *Disease-causing mutations* 
 
 Quantitative analyses of the molecular evolution of protein-coding genes
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -288,7 +298,7 @@ The results are therefore dependent on the alignment. We'd get a different evolu
 
 We envision mutation as identical across sites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Each nucleotide mutation are equally likely (Jukes-Cantor model)
+* Each nucleotide mutation is equally likely (Jukes-Cantor model)
 
 * Some nucleotide mutations are likely than others
 

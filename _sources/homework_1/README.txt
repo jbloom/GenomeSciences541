@@ -3,7 +3,7 @@ Homework 1
 ============================
 Homework 1 for Genome Sciences 541, assigned by `Jesse Bloom`_.
 
-This homework is due on May 5, 2014.
+This homework is due on June 2, 2015.
 
 .. contents::
    :level: 2
