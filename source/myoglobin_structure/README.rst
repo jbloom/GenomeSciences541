@@ -30,6 +30,7 @@ Open `PyMol`_, then at the `PyMol`_ command line type::
 
 This command will create a variety of output ``*.png`` files in the subdirectory ``./png_images/``. 
 
+It will also allow you to visualize the structural overlay of these two proteins. Note the very high degree of structural homology, despite the fact that these proteins are only 57% identical.
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
 .. _`Watson and Crick (1953)`: http://www.nature.com/nature/dna50/watsoncrick.pdf

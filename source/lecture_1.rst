@@ -158,7 +158,7 @@ Structure is highly conserved
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
 This observation has stood the test of time. In fact, sequences with as little as 30-35% identity generally have
-very similar structures.
+very similar structures. See `Chothia and Lesk (1984) <http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1166865/?page=1>`_
 
 Structure is highly conserved
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

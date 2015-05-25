@@ -15,7 +15,7 @@ These slides are written in `reStructuredText`_ and compiled with `hieroglyph`_ 
 
 To compile the slides, you need to first install `hieroglyph`_ on your computer::
 
-    easy_install hieroglyphy
+    easy_install hieroglyph
 
 and then make the slides with::
 
