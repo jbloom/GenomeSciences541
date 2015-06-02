@@ -298,7 +298,7 @@ The results are therefore dependent on the alignment. We'd get a different evolu
 
 We envision mutation as identical across sites
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Each nucleotide mutation are equally likely (Jukes-Cantor model)
+* Each nucleotide mutation is equally likely (Jukes-Cantor model)
 
 * Some nucleotide mutations are likely than others
 

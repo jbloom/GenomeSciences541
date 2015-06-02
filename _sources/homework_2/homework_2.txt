@@ -3,7 +3,7 @@ Homework 2
 ============================
 Homework 2 for Genome Sciences 541, assigned by `Jesse Bloom`_.
 
-This homework is due on May 13, 2014.
+This homework is due on June 9, 2015.
 
 What you need 
 ---------------------
