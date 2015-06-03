@@ -10,6 +10,6 @@ Lecture 3
 
 * Here are the :download:`hand-written lecture notes <readings/lecture_3_notes.pdf>`.
 
-* Here is the `homework 2`_, due on May 13.
+* Here is the `homework 2`_, due on June 9, 2015
 
 .. include:: weblinks.txt
