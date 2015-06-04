@@ -2,7 +2,7 @@
 BEAST example
 ===========================================
 
-This directory contains the input FASTA and XML file for the `BEAST`_ analysis used in lecture 4.
+This directory contains the input FASTA and XML file for the `BEAST`_ analyses in lecture 4.
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
 .. _`Watson and Crick (1953)`: http://www.nature.com/nature/dna50/watsoncrick.pdf

@@ -11,4 +11,4 @@
 .. _`Python script used for the mini-simulation in lecture 2`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/scripts/simulate_evolution.py
 .. _`homework 2`: http://jbloom.github.io/GenomeSciences541/homework_2/homework_2.html
 .. _`BEAST`: http://beast.bio.ed.ac.uk/
-.. _`BEAST example`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/BEAST_Example
+.. _`BEAST examples`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/BEAST_Examples
