@@ -15,7 +15,7 @@ Question 1
 -----------
 Compute the maximum likelihood Jukes-Cantor distance from the starting sequence as a function of the number of simulation steps for your simulations in `homework 1`_. 
 Do this for the full sequences and the first, second, and third codon positions separately.
-Recall that the estimate of the Jukes-Cantor distance is :math:`t = \frac{3}{4\mu} \ln\left(\frac{3}{4 p - 1}\right)` where :math:`p` is the pairwise sequence identity. We will use units of time such that :math:`\mu = 1`.
+Recall that the estimate of the Jukes-Cantor distance is :math:`t = \frac{-3}{4\mu} \ln\left(\frac{4}{3}p - \frac{1}{3}\right)` where :math:`p` is the pairwise sequence identity. We will use units of time such that :math:`\mu = 1`.
 If the Jukes-Cantor estimate is accurate, then the estimated distance should scale linearly with the number of simulation steps. Does this happen? Why or why not?
 
 Question 2 (background)
