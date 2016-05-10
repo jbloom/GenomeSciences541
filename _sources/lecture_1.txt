@@ -11,7 +11,7 @@ Lecture 1
   skim pages 115-146,
   feel free to skip pages 153-end.
 
-* The homework for this lecture is at `homework 1`_.
+* Here are the :downloads:`handwritten lecture 1 notes from the last part of the lecture.<readings/lecture_1_notes.pdf>`.
 
 Lecture 1: the evolution of protein-coding genes
 ==================================================
@@ -260,6 +260,8 @@ We will ignore the intra-population polymorphism
 
 We ignore within-species variation, and treat the evolving populations as a single clonal sequence. This assumption may sometimes be problematic, as the frequency of an allele in a population is not necessarily equal to its probability of ultimately fixing. We are not going to worry about this problem here...
 
-
+Notes from rest of lecture
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Here are the :downloads:`handwritten lecture 1 notes from the last part of the lecture.<readings/lecture_1_notes.pdf>`.
 
 .. include:: weblinks.txt
