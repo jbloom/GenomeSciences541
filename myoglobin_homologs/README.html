@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
     <link rel="stylesheet" href="../_static/slides.css" type="text/css" />
     
-
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    
     
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
@@ -26,12 +27,14 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script type="text/javascript" src="../_static/common.js"></script>
+    
     <script type="text/javascript" src="../_static/slides.js"></script>
     <script type="text/javascript" src="../_static/sync.js"></script>
     <script type="text/javascript" src="../_static/controller.js"></script>
     <script type="text/javascript" src="../_static/init.js"></script>
+    
     
     <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="../index.html" /> 
   </head>
@@ -42,13 +45,21 @@
    class='slides layout-regular'>
 
 
-  <article class="slide level-1" id="myoglobin-homologs">
+  
+<article class="slide level-1" id="myoglobin-homologs">
+
 <h1>Myoglobin homologs</h1>
+
 <p>This is an analysis by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a> of a set of myoglobin homologs.</p>
+
+
+
 
 </article>
 <article class="slide level-2" id="programs-used">
+
 <h2>Programs used</h2>
+
 <ul class="simple">
 <li><a class="reference external" href="https://www.python.org/">Python</a>: tested with version 2.7.3</li>
 <li><a class="reference external" href="http://biopython.org/wiki/Main_Page">BioPython</a>: tested with version 1.6.3</li>
@@ -58,27 +69,39 @@
 <li><a class="reference external" href="http://www.imagemagick.org/script/convert.php">ImageMagick convert</a>: for making JPGs from PDFs.</li>
 </ul>
 
+
+
+
 </article>
 <article class="slide level-2" id="input-files">
+
 <h2>Input files</h2>
+
 <ul class="simple">
-<li><tt class="docutils literal"><span class="pre">./genes/</span></tt> is a subdirectory that contains the coding DNA sequences of a variety of myoglobin homologs.</li>
-<li><tt class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></tt> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> of sperm whale myoglobin renumbered to begin with 1 at the N-terminal methionine and proceed sequentially from there. The original <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> begins with 1 at the second valine, hence the need for renumbering.</li>
-<li><tt class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></tt> gives the results of analyzing <tt class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></tt> with the <a class="reference external" href="http://www.cmbi.ru.nl/hsspsoap/">DSSP webserver</a> to calculate secondary structure and solvent accessibility.</li>
-<li><tt class="docutils literal"><span class="pre">compare_homologs.py</span></tt> is the master <a class="reference external" href="https://www.python.org/">Python</a> script that runs the analysis in this directory.</li>
+<li><code class="docutils literal"><span class="pre">./genes/</span></code> is a subdirectory that contains the coding DNA sequences of a variety of myoglobin homologs.</li>
+<li><code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> of sperm whale myoglobin renumbered to begin with 1 at the N-terminal methionine and proceed sequentially from there. The original <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> begins with 1 at the second valine, hence the need for renumbering.</li>
+<li><code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> gives the results of analyzing <code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> with the <a class="reference external" href="http://www.cmbi.ru.nl/hsspsoap/">DSSP webserver</a> to calculate secondary structure and solvent accessibility.</li>
+<li><code class="docutils literal"><span class="pre">compare_homologs.py</span></code> is the master <a class="reference external" href="https://www.python.org/">Python</a> script that runs the analysis in this directory.</li>
 </ul>
+
+
+
 
 </article>
 <article class="slide level-2" id="running-the-analysis">
+
 <h2>Running the analysis</h2>
+
 <p>To run the analysis, simply type the following at the command line:</p>
-<div class="highlight-python"><div class="highlight"><pre>python compare_homologs.py
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">compare_homologs</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 <p>If you have installed the <a class="reference internal" href="#programs-used">Programs used</a>, this will generate all of the remaining output.</p>
 
-</article>
 
+
+
+</article>
 
 </section>
 
