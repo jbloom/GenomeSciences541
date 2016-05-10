@@ -11,7 +11,7 @@ Lecture 1
   skim pages 115-146,
   feel free to skip pages 153-end.
 
-* Here are the :downloads:`handwritten lecture 1 notes from the last part of the lecture.<readings/lecture_1_notes.pdf>`.
+* Here are the :download:`handwritten lecture 1 notes from the last part of the lecture. <readings/lecture_1_notes.pdf>`.
 
 Lecture 1: the evolution of protein-coding genes
 ==================================================
@@ -262,6 +262,6 @@ We ignore within-species variation, and treat the evolving populations as a sing
 
 Notes from rest of lecture
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Here are the :downloads:`handwritten lecture 1 notes from the last part of the lecture.<readings/lecture_1_notes.pdf>`.
+* Here are the :download:`handwritten lecture 1 notes from the last part of the lecture.<readings/lecture_1_notes.pdf>`.
 
 .. include:: weblinks.txt
