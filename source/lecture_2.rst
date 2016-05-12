@@ -8,4 +8,6 @@ Lecture 2
 
 * The lecture was done on the board. Here are the :download:`hand-written notes <readings/lecture_2_notes.pdf>`.
 
+* The first homework is at https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
+
 .. include:: weblinks.txt

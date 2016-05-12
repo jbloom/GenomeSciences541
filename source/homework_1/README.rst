@@ -3,12 +3,16 @@ Homework 1
 ============================
 Homework 1 for Genome Sciences 541, assigned by `Jesse Bloom`_.
 
-This homework is due on May 17, 2016.
+The homework is in a iPython notebook at 
+https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
 
-.. contents::
-   :level: 2
+Download the notebook, ``homework_1.ipynb``. You can open it with::
 
-**The homework will be added shortly.**
+    jupyter notebook homework_1.ipynb
+
+This will require you to have ``jupyter`` and ``Python`` installed.
+
+You can also look at it directly by clicking on the notebook, but the math will not be rendered properly by GitHub.
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
 .. _`homework 1`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1

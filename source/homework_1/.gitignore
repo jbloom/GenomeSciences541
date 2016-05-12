@@ -1,3 +1,5 @@
 seqs_*.fasta
 site_rates*
 .ipynb_checkpoints/
+RAxML*
+JukesCantor_simulated_NP_alignment.fasta
