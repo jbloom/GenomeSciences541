@@ -8,7 +8,7 @@ Lecture 4
 
 * :download:`Here is the alignment <DataMonkeyExample/HA.fasta>` for the analysis with `DataMonkey <http://www.datamonkey.org/>`_.
 
-* The homework is at https://github.com/jbloom/GenomeSciences541/blob/gh-pages/source/homework_2/homework_2.rst
+* The homework is `here <https://github.com/jbloom/GenomeSciences541/blob/gh-pages/source/homework_2/homework_2.rst>`_.
 
 
 .. include:: weblinks.txt
