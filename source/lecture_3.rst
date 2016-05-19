@@ -6,10 +6,8 @@ Lecture 3
 
 * These slides are at http://jbloom.github.io/GenomeSciences541/lecture_3.html
 
-* :download:`Using substitution models and molecular clock <readings/dos_Reis_et_al-2009.pdf>`.
+* Most of the class was spent going over the homework. 
 
-* Here are the :download:`hand-written lecture notes <readings/lecture_3_notes.pdf>`.
-
-* Here is the `homework 2`_, due on June 9, 2015
+* Here are the brief review notes on model reversibility. :download:`hand-written lecture notes <readings/lecture_3_notes.pdf>`.
 
 .. include:: weblinks.txt

@@ -12,8 +12,6 @@ Download the notebook, ``homework_1.ipynb``. Be sure to download the actual note
 
 This will require you to have ``jupyter`` and ``Python`` installed.
 
-Note that the ``pyvolve`` package used by this homework is **only compatible with Python 2. It does not work with Python 3.**
-
 You can also look at it directly by clicking on the notebook, but the math will not be rendered properly by GitHub.
 
 .. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
