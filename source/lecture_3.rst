@@ -8,6 +8,6 @@ Lecture 3
 
 * Most of the class was spent going over the homework. 
 
-* Here are the brief review notes on model reversibility. :download:`hand-written lecture notes <readings/lecture_3_notes.pdf>`.
+* Here are brief review notes on model reversibility. :download:`hand-written lecture notes <readings/lecture_3_notes.pdf>`.
 
 .. include:: weblinks.txt
