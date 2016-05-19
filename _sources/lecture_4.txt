@@ -6,6 +6,8 @@ Lecture 4
 
 * These slides are at http://jbloom.github.io/GenomeSciences541/lecture_4.html
 
+* :download:`Here is the alignment <DataMonkeyExample/HA.fasta>` for the analysis with `DataMonkey <http://www.datamonkey.org/>`_.
+
 * We will do some Bayesian phylogenetic analysis with `BEAST`_. Here are the data for the `BEAST examples`_.
 
 
