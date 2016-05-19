@@ -1,47 +1,32 @@
-============================
-Homework 2
-============================
-Homework 2 for Genome Sciences 541, assigned by `Jesse Bloom`_.
+=====================================
+2nd Homework from Jesse Bloom
+=====================================
 
-This homework is due on June 9, 2015.
+This is the second homework from Jesse Bloom for Genome Sciences 541. 
 
-What you need 
----------------------
-* You first need to have completed `homework 1`_.
+It is due at 11 PM on May 27, 2016. Submit it via the DropBox link from Bill Noble.
 
-* You need a program that can be used to compute matrix exponentials. One such program is ``scipy``, see for example http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.linalg.expm.html
+For this homework, you should choose a gene of interest to yourself and perform a phylogenetic analysis using `RAxML`_ like we did for the first homework and in lecture 2.
 
-Question 1
------------
-Compute the maximum likelihood Jukes-Cantor distance from the starting sequence as a function of the number of simulation steps for your simulations in `homework 1`_. 
-Do this for the full sequences and the first, second, and third codon positions separately.
-Recall that the estimate of the Jukes-Cantor distance is :math:`t = \frac{-3}{4\mu} \ln\left(\frac{4}{3}p - \frac{1}{3}\right)` where :math:`p` is the pairwise sequence identity. We will use units of time such that :math:`\mu = 1`.
-If the Jukes-Cantor estimate is accurate, then the estimated distance should scale linearly with the number of simulation steps. Does this happen? Why or why not?
+You should then use the *FEL* method to search for sites under purifying and positive selection using `DataMonkey`_ like we did in lecture 4.
 
-Question 2 (background)
-------------------------
-The Kimura 2-paramer model adds a single parameter :math:`\kappa` to the Jukes Cantor model. The transition matrix :math:`\mathbf{P}` for this model is as follows, where nucleotides are indexed in alphabetical order (A, C, G, T) and matrix entry :math:`P_{ij}` is the rate going from :math:`i` to :math:`j`. Note that :math:`\mu` has been defined such that most of the matrix elements are one.
+Please do the following steps, and submit your code along with a single file containing the results as a ``.zip`` or ``.tgz`` file:
 
-.. math::
+    1) Choose a gene to analyze. This can be any protein-coding gene of interest to you. But it must be a gene with at least a few homologs within 50% sequence identity. Answer this question: **What gene did you choose?**
 
-   \mathbf{P} = \left[\begin{array}{cccc}
-                -\left(2 + \kappa\right) & 1 & \kappa & 1 \\ 
-                1 & -\left(2 + \kappa\right) & 1 & \kappa \\ 
-                \kappa & 1 & -\left(2 + \kappa\right) & 1 \\ 
-                1 & \kappa & 1 & -\left(2 + \kappa\right) \\ 
-                \end{array} \right]
+    2) Build a **codon** alignment of your gene and at least 5 other homologs. You can include many more sequences if you want, but as you add more the programs will get slower (although this shouldn't be a problem unless you have more than 100). 
+    
+       If you are working on a gene that you already study, you may already have an alignment. If you don't have a gene or alignment in mind, pick one and find homologs. There are lots of ways to get homologs:
+    
+        - One easy way is to go to `HomoloGene <http://www.ncbi.nlm.nih.gov/homologene>`_, which will automatically search for homologs. Once you do the search, you will get a list of homologs and **protein** alignments, but you will have to manually click through to get the **coding** alignments.
 
-Question 2 (more background) 
-------------------------------- 
-With the definition on the previous slide, let :math:`\mathbf{p_0}` be the initial probability distribution. The probability distribution after time :math:`t` is then :math:`\mathbf{p}\left(t\right) = \mathbf{p_0} \exp\left(t \mathbf{P}\right)` where we are using units of time so that :math:`\mu = 1`.
+        - Another easy thing is to go to the `Influenza Virus Resource <http://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database>`_ and download some sequences from the same *Protein* making sure that you take the *Protein Coding Region*.
 
-So to get the probability that a site changes from A to C in time :math:`t`, set :math:`\mathbf{p_0} = \left(1, 0, 0, 0\right)` and then compute element 2 of :math:`\mathbf{p}\left(t\right)`. The probability the site changes from A to G is likewise element 3 of :math:`\mathbf{p}\left(t\right)`, etc.
+       Whatever you choose, build a **codon** alignment (e.g. nucleotide alignment from the protein alignment). Then answer the following: **How many sequences did you choose? What is the average pairwise identity?**.
 
-Question 2
-----------
-Using :math:`\kappa = 4` (the value from your simulation), compute the maximum likelihood distance from your initial sequence to the sequence after 100 steps. You no longer have an analytical formula for :math:`t` (one is possible but we haven't solved for it), so you can just test values of :math:`t` taking very small steps to find the maximum value. How does the maximum likelihood with the Kimura 2-parameter model compare to the maximum likelihood for the same pair of sequences using the Jukes-Cantor model? Note that you do **not** need to compare the estimated value of :math:`t` -- rather, the comparison is between the maximum likelihood value itself for the two models (i.e. which fits better).
+    3) Use `RAxML`_ to infer a maximum likelihood phylogenetic tree using the *GTRCAT* model like we did in lecture 2 and homework 1. Then visualize this tree using `FigTree <http://tree.bio.ed.ac.uk/software/figtree/>`_ or one of the many other tree visualizing programs you can find via Google. The do the following: **Include an image of your tree, and comment on whether it looks as you expected.**
 
-.. _`Jesse Bloom`: http://research.fhcrc.org/bloom/en.html
-.. _`homework 1`: https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
-.. _`1MBN`: http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN
-.. _`FoldX`: http://foldx.crg.es/
+    4) Use `DataMonkey`_ to test for positive selection using the *FEL* method. Answer the following: **Where there any sites under positive selection? Where there any sites under purifying selection? Are these results what you expected? Include the full *FEL* report too.**
+
+.. _`RAxML`: http://sco.h-its.org/exelixis/web/software/raxml/index.html
+.. _`DataMonkey`: http://www.datamonkey.org/

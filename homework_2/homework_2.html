@@ -5,7 +5,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Homework 2 &mdash; Genome Sciences 541 2014.04.17 documentation</title>
+    <title>2nd Homework from Jesse Bloom &mdash; Genome Sciences 541 2014.04.17 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
@@ -46,76 +46,35 @@
 
 
   
-<article class="slide level-1" id="homework-2">
+<article class="slide level-1" id="nd-homework-from-jesse-bloom">
 
-<h1>Homework 2</h1>
+<h1>2nd Homework from Jesse Bloom</h1>
 
-<p>Homework 2 for Genome Sciences 541, assigned by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a>.</p>
-<p>This homework is due on June 9, 2015.</p>
-
-
-
-
-</article>
-<article class="slide level-2" id="what-you-need">
-
-<h2>What you need</h2>
-
-<ul class="simple">
-<li>You first need to have completed <a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1">homework 1</a>.</li>
-<li>You need a program that can be used to compute matrix exponentials. One such program is <code class="docutils literal"><span class="pre">scipy</span></code>, see for example <a class="reference external" href="http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.linalg.expm.html">http://docs.scipy.org/doc/scipy-0.13.0/reference/generated/scipy.linalg.expm.html</a></li>
+<p>This is the second homework from Jesse Bloom for Genome Sciences 541.</p>
+<p>It is due at 11 PM on May 27, 2016. Submit it via the DropBox link from Bill Noble.</p>
+<p>For this homework, you should choose a gene of interest to yourself and perform a phylogenetic analysis using <a class="reference external" href="http://sco.h-its.org/exelixis/web/software/raxml/index.html">RAxML</a> like we did for the first homework and in lecture 2.</p>
+<p>You should then use the <em>FEL</em> method to search for sites under purifying and positive selection using <a class="reference external" href="http://www.datamonkey.org/">DataMonkey</a> like we did in lecture 4.</p>
+<p>Please do the following steps, and submit your code along with a single file containing the results as a <code class="docutils literal"><span class="pre">.zip</span></code> or <code class="docutils literal"><span class="pre">.tgz</span></code> file:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Choose a gene to analyze. This can be any protein-coding gene of interest to you. But it must be a gene with at least a few homologs within 50% sequence identity. Answer this question: <strong>What gene did you choose?</strong></p>
+</li>
+<li><p class="first">Build a <strong>codon</strong> alignment of your gene and at least 5 other homologs. You can include many more sequences if you want, but as you add more the programs will get slower (although this shouldn't be a problem unless you have more than 100).</p>
+<p>If you are working on a gene that you already study, you may already have an alignment. If you don't have a gene or alignment in mind, pick one and find homologs. There are lots of ways to get homologs:</p>
+<blockquote>
+<div><ul class="simple">
+<li>One easy way is to go to <a class="reference external" href="http://www.ncbi.nlm.nih.gov/homologene">HomoloGene</a>, which will automatically search for homologs. Once you do the search, you will get a list of homologs and <strong>protein</strong> alignments, but you will have to manually click through to get the <strong>coding</strong> alignments.</li>
+<li>Another easy thing is to go to the <a class="reference external" href="http://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database">Influenza Virus Resource</a> and download some sequences from the same <em>Protein</em> making sure that you take the <em>Protein Coding Region</em>.</li>
 </ul>
-
-
-
-
-</article>
-<article class="slide level-2" id="question-1">
-
-<h2>Question 1</h2>
-
-<p>Compute the maximum likelihood Jukes-Cantor distance from the starting sequence as a function of the number of simulation steps for your simulations in <a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1">homework 1</a>.
-Do this for the full sequences and the first, second, and third codon positions separately.
-Recall that the estimate of the Jukes-Cantor distance is <span class="math">\(t = \frac{-3}{4\mu} \ln\left(\frac{4}{3}p - \frac{1}{3}\right)\)</span> where <span class="math">\(p\)</span> is the pairwise sequence identity. We will use units of time such that <span class="math">\(\mu = 1\)</span>.
-If the Jukes-Cantor estimate is accurate, then the estimated distance should scale linearly with the number of simulation steps. Does this happen? Why or why not?</p>
-
-
-
-
-</article>
-<article class="slide level-2" id="question-2-background">
-
-<h2>Question 2 (background)</h2>
-
-<p>The Kimura 2-paramer model adds a single parameter <span class="math">\(\kappa\)</span> to the Jukes Cantor model. The transition matrix <span class="math">\(\mathbf{P}\)</span> for this model is as follows, where nucleotides are indexed in alphabetical order (A, C, G, T) and matrix entry <span class="math">\(P_{ij}\)</span> is the rate going from <span class="math">\(i\)</span> to <span class="math">\(j\)</span>. Note that <span class="math">\(\mu\)</span> has been defined such that most of the matrix elements are one.</p>
-<div class="math">
-\[\begin{split}\mathbf{P} = \left[\begin{array}{cccc}
-             -\left(2 + \kappa\right) &amp; 1 &amp; \kappa &amp; 1 \\
-             1 &amp; -\left(2 + \kappa\right) &amp; 1 &amp; \kappa \\
-             \kappa &amp; 1 &amp; -\left(2 + \kappa\right) &amp; 1 \\
-             1 &amp; \kappa &amp; 1 &amp; -\left(2 + \kappa\right) \\
-             \end{array} \right]\end{split}\]</div>
-
-
-
-
-</article>
-<article class="slide level-2" id="question-2-more-background">
-
-<h2>Question 2 (more background)</h2>
-
-<p>With the definition on the previous slide, let <span class="math">\(\mathbf{p_0}\)</span> be the initial probability distribution. The probability distribution after time <span class="math">\(t\)</span> is then <span class="math">\(\mathbf{p}\left(t\right) = \mathbf{p_0} \exp\left(t \mathbf{P}\right)\)</span> where we are using units of time so that <span class="math">\(\mu = 1\)</span>.</p>
-<p>So to get the probability that a site changes from A to C in time <span class="math">\(t\)</span>, set <span class="math">\(\mathbf{p_0} = \left(1, 0, 0, 0\right)\)</span> and then compute element 2 of <span class="math">\(\mathbf{p}\left(t\right)\)</span>. The probability the site changes from A to G is likewise element 3 of <span class="math">\(\mathbf{p}\left(t\right)\)</span>, etc.</p>
-
-
-
-
-</article>
-<article class="slide level-2" id="question-2">
-
-<h2>Question 2</h2>
-
-<p>Using <span class="math">\(\kappa = 4\)</span> (the value from your simulation), compute the maximum likelihood distance from your initial sequence to the sequence after 100 steps. You no longer have an analytical formula for <span class="math">\(t\)</span> (one is possible but we haven't solved for it), so you can just test values of <span class="math">\(t\)</span> taking very small steps to find the maximum value. How does the maximum likelihood with the Kimura 2-parameter model compare to the maximum likelihood for the same pair of sequences using the Jukes-Cantor model? Note that you do <strong>not</strong> need to compare the estimated value of <span class="math">\(t\)</span> -- rather, the comparison is between the maximum likelihood value itself for the two models (i.e. which fits better).</p>
+</div></blockquote>
+<p>Whatever you choose, build a <strong>codon</strong> alignment (e.g. nucleotide alignment from the protein alignment). Then answer the following: <strong>How many sequences did you choose? What is the average pairwise identity?</strong>.</p>
+</li>
+<li><p class="first">Use <a class="reference external" href="http://sco.h-its.org/exelixis/web/software/raxml/index.html">RAxML</a> to infer a maximum likelihood phylogenetic tree using the <em>GTRCAT</em> model like we did in lecture 2 and homework 1. Then visualize this tree using <a class="reference external" href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or one of the many other tree visualizing programs you can find via Google. The do the following: <strong>Include an image of your tree, and comment on whether it looks as you expected.</strong></p>
+</li>
+<li><p class="first">Use <a class="reference external" href="http://www.datamonkey.org/">DataMonkey</a> to test for positive selection using the <em>FEL</em> method. Answer the following: <strong>Where there any sites under positive selection? Where there any sites under purifying selection? Are these results what you expected? Include the full *FEL* report too.</strong></p>
+</li>
+</ol>
+</div></blockquote>
 
 
 
