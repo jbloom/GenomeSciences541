@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Myoglobin homologs &mdash; Genome Sciences 541 2014.04.17 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '2014.04.17',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="../index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="myoglobin-homologs">
+<h1>Myoglobin homologs<a class="headerlink" href="#myoglobin-homologs" title="Permalink to this headline">¶</a></h1>
+<p>This is an analysis by <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a> of a set of myoglobin homologs.</p>
+<div class="section" id="programs-used">
+<h2>Programs used<a class="headerlink" href="#programs-used" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="https://www.python.org/">Python</a>: tested with version 2.7.3</li>
+<li><a class="reference external" href="http://biopython.org/wiki/Main_Page">BioPython</a>: tested with version 1.6.3</li>
+<li><a class="reference external" href="http://probcons.stanford.edu/">probcons</a>: for alignments, tested with version 1.12</li>
+<li><a class="reference external" href="https://github.com/jbloom/phyloExpCM">phyloExpCM</a>: for calculating natural frequencies from alignments. Note that <a class="reference external" href="https://github.com/jbloom/phyloExpCM">phyloExpCM</a> also has some requirements for external programs as described in its documentation.</li>
+<li><a class="reference external" href="https://github.com/jbloom/mapmuts">mapmuts</a>: for calculating natural frequencies from alignments. Note that <a class="reference external" href="https://github.com/jbloom/mapmuts">mapmuts</a> also has some requirements for external programs as described in its documentation.</li>
+<li><a class="reference external" href="http://www.imagemagick.org/script/convert.php">ImageMagick convert</a>: for making JPGs from PDFs.</li>
+</ul>
+</div>
+<div class="section" id="input-files">
+<h2>Input files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">./genes/</span></code> is a subdirectory that contains the coding DNA sequences of a variety of myoglobin homologs.</li>
+<li><code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> of sperm whale myoglobin renumbered to begin with 1 at the N-terminal methionine and proceed sequentially from there. The original <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> begins with 1 at the second valine, hence the need for renumbering.</li>
+<li><code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> gives the results of analyzing <code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> with the <a class="reference external" href="http://www.cmbi.ru.nl/hsspsoap/">DSSP webserver</a> to calculate secondary structure and solvent accessibility.</li>
+<li><code class="docutils literal"><span class="pre">compare_homologs.py</span></code> is the master <a class="reference external" href="https://www.python.org/">Python</a> script that runs the analysis in this directory.</li>
+</ul>
+</div>
+<div class="section" id="running-the-analysis">
+<h2>Running the analysis<a class="headerlink" href="#running-the-analysis" title="Permalink to this headline">¶</a></h2>
+<p>To run the analysis, simply type the following at the command line:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">compare_homologs</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>If you have installed the <a class="reference internal" href="#programs-used">Programs used</a>, this will generate all of the remaining output.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Myoglobin homologs</a><ul>
+<li><a class="reference internal" href="#programs-used">Programs used</a></li>
+<li><a class="reference internal" href="#input-files">Input files</a></li>
+<li><a class="reference internal" href="#running-the-analysis">Running the analysis</a></li>
+</ul>
+</li>
+</ul>
+
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/myoglobin_homologs/README.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2014, Jesse Bloom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
+    </div>
+  </body>
+</html>
