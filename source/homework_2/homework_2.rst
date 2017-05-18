@@ -4,7 +4,7 @@
 
 This is the second homework from Jesse Bloom for Genome Sciences 541. 
 
-It is due at 11 PM on May 27, 2016. Submit it via the DropBox link from Bill Noble.
+It is due on May 25, 2017. Submit it via the DropBox link.
 
 For this homework, you should choose a gene of interest to yourself and perform a phylogenetic analysis using `RAxML`_ like we did for the first homework and in lecture 2.
 
