@@ -1,39 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Structure and evolution of myoglobin &mdash; Genome Sciences 541 2014.04.17 documentation</title>
-    
+    <meta charset="utf-8" />
+    <title>Structure and evolution of myoglobin &#8212; Genome Sciences 541 2014.04.17 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '2014.04.17',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="../index.html" /> 
-  </head>
-  <body role="document">
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -48,19 +39,17 @@
 <div class="section" id="programs-used">
 <h2>Programs used<a class="headerlink" href="#programs-used" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><a class="reference external" href="https://www.python.org/">Python</a>: tested with version 2.7.3</li>
-<li><a class="reference external" href="http://www.pymol.org/">PyMol</a></li>
+<li><p><a class="reference external" href="https://www.python.org/">Python</a>: tested with version 2.7.3</p></li>
+<li><p><a class="reference external" href="http://www.pymol.org/">PyMol</a></p></li>
 </ul>
 </div>
 <div class="section" id="input-files">
 <h2>Input files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first"><code class="docutils literal"><span class="pre">1MBN.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> containing the crystal structure of sperm whale myoglobin.</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">1MYT.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MYT">1MYT</a> containing the crystal strucure of yellowfin tuna myoglobin.</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">analyze_protein.py</span></code> is a <a class="reference external" href="https://www.python.org/">Python</a> script to be run in <a class="reference external" href="http://www.pymol.org/">PyMol</a> to label the protein structure and generate images. Run by opening <a class="reference external" href="http://www.pymol.org/">PyMol</a> and then in <a class="reference external" href="http://www.pymol.org/">PyMol</a>, typing:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">run</span> <span class="n">analyze_protein</span><span class="o">.</span><span class="n">py</span>
+<li><p><code class="docutils literal notranslate"><span class="pre">1MBN.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> containing the crystal structure of sperm whale myoglobin.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1MYT.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MYT">1MYT</a> containing the crystal strucure of yellowfin tuna myoglobin.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">analyze_protein.py</span></code> is a <a class="reference external" href="https://www.python.org/">Python</a> script to be run in <a class="reference external" href="http://www.pymol.org/">PyMol</a> to label the protein structure and generate images. Run by opening <a class="reference external" href="http://www.pymol.org/">PyMol</a> and then in <a class="reference external" href="http://www.pymol.org/">PyMol</a>, typing:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run</span> <span class="n">analyze_protein</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 </li>
@@ -69,10 +58,10 @@
 <div class="section" id="running-the-analysis">
 <h2>Running the analysis<a class="headerlink" href="#running-the-analysis" title="Permalink to this headline">¶</a></h2>
 <p>Open <a class="reference external" href="http://www.pymol.org/">PyMol</a>, then at the <a class="reference external" href="http://www.pymol.org/">PyMol</a> command line type:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">run</span> <span class="n">analyze_protein</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">run</span> <span class="n">analyze_protein</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
-<p>This command will create a variety of output <code class="docutils literal"><span class="pre">*.png</span></code> files in the subdirectory <code class="docutils literal"><span class="pre">./png_images/</span></code>.</p>
+<p>This command will create a variety of output <code class="docutils literal notranslate"><span class="pre">*.png</span></code> files in the subdirectory <code class="docutils literal notranslate"><span class="pre">./png_images/</span></code>.</p>
 <p>It will also allow you to visualize the structural overlay of these two proteins. Note the very high degree of structural homology, despite the fact that these proteins are only 57% identical.</p>
 </div>
 </div>
@@ -83,7 +72,7 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <h3><a href="../index.html">Table of Contents</a></h3>
   <ul>
 <li><a class="reference internal" href="#">Structure and evolution of myoglobin</a><ul>
 <li><a class="reference internal" href="#programs-used">Programs used</a></li>
@@ -96,18 +85,18 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/myoglobin_structure/README.txt"
+      <li><a href="../_sources/myoglobin_structure/README.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -120,12 +109,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2014, Jesse Bloom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
+        &#169; Copyright 2014, Jesse Bloom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>
 </html>

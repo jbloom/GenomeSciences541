@@ -1,39 +1,30 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>2nd Homework from Jesse Bloom &mdash; Genome Sciences 541 2014.04.17 documentation</title>
-    
+    <meta charset="utf-8" />
+    <title>2nd Homework from Jesse Bloom &#8212; Genome Sciences 541 2014.04.17 documentation</title>
     <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    '../',
-        VERSION:     '2014.04.17',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="../index.html" /> 
-  </head>
-  <body role="document">
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -45,28 +36,25 @@
   <div class="section" id="nd-homework-from-jesse-bloom">
 <h1>2nd Homework from Jesse Bloom<a class="headerlink" href="#nd-homework-from-jesse-bloom" title="Permalink to this headline">¶</a></h1>
 <p>This is the second homework from Jesse Bloom for Genome Sciences 541.</p>
-<p>It is due at 11 PM on May 27, 2016. Submit it via the DropBox link from Bill Noble.</p>
+<p>It is due on May 25, 2017. Submit it via the DropBox link.</p>
 <p>For this homework, you should choose a gene of interest to yourself and perform a phylogenetic analysis using <a class="reference external" href="http://sco.h-its.org/exelixis/web/software/raxml/index.html">RAxML</a> like we did for the first homework and in lecture 2.</p>
 <p>You should then use the <em>FEL</em> method to search for sites under purifying and positive selection using <a class="reference external" href="http://www.datamonkey.org/">DataMonkey</a> like we did in lecture 4.</p>
-<p>Please do the following steps, and submit your code along with a single file containing the results as a <code class="docutils literal"><span class="pre">.zip</span></code> or <code class="docutils literal"><span class="pre">.tgz</span></code> file:</p>
+<p>Please do the following steps, and submit your code along with a single file containing the results as a <code class="docutils literal notranslate"><span class="pre">.zip</span></code> or <code class="docutils literal notranslate"><span class="pre">.tgz</span></code> file:</p>
 <blockquote>
 <div><ol class="arabic">
-<li><p class="first">Choose a gene to analyze. This can be any protein-coding gene of interest to you. But it must be a gene with at least a few homologs within 50% sequence identity. Answer this question: <strong>What gene did you choose?</strong></p>
-</li>
-<li><p class="first">Build a <strong>codon</strong> alignment of your gene and at least 5 other homologs. You can include many more sequences if you want, but as you add more the programs will get slower (although this shouldn&#8217;t be a problem unless you have more than 100).</p>
-<p>If you are working on a gene that you already study, you may already have an alignment. If you don&#8217;t have a gene or alignment in mind, pick one and find homologs. There are lots of ways to get homologs:</p>
+<li><p>Choose a gene to analyze. This can be any protein-coding gene of interest to you. But it must be a gene with at least a few homologs within 50% sequence identity. Answer this question: <strong>What gene did you choose?</strong></p></li>
+<li><p>Build a <strong>codon</strong> alignment of your gene and at least 5 other homologs. You can include many more sequences if you want, but as you add more the programs will get slower (although this shouldn’t be a problem unless you have more than 100).</p>
+<p>If you are working on a gene that you already study, you may already have an alignment. If you don’t have a gene or alignment in mind, pick one and find homologs. There are lots of ways to get homologs:</p>
 <blockquote>
 <div><ul class="simple">
-<li>One easy way is to go to <a class="reference external" href="http://www.ncbi.nlm.nih.gov/homologene">HomoloGene</a>, which will automatically search for homologs. Once you do the search, you will get a list of homologs and <strong>protein</strong> alignments, but you will have to manually click through to get the <strong>coding</strong> alignments.</li>
-<li>Another easy thing is to go to the <a class="reference external" href="http://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database">Influenza Virus Resource</a> and download some sequences from the same <em>Protein</em> making sure that you take the <em>Protein Coding Region</em>.</li>
+<li><p>One easy way is to go to <a class="reference external" href="http://www.ncbi.nlm.nih.gov/homologene">HomoloGene</a>, which will automatically search for homologs. Once you do the search, you will get a list of homologs and <strong>protein</strong> alignments, but you will have to manually click through to get the <strong>coding</strong> alignments.</p></li>
+<li><p>Another easy thing is to go to the <a class="reference external" href="http://www.ncbi.nlm.nih.gov/genomes/FLU/Database/nph-select.cgi?go=database">Influenza Virus Resource</a> and download some sequences from the same <em>Protein</em> making sure that you take the <em>Protein Coding Region</em>.</p></li>
 </ul>
 </div></blockquote>
 <p>Whatever you choose, build a <strong>codon</strong> alignment (e.g. nucleotide alignment from the protein alignment). Then answer the following: <strong>How many sequences did you choose? What is the average pairwise identity?</strong>.</p>
 </li>
-<li><p class="first">Use <a class="reference external" href="http://sco.h-its.org/exelixis/web/software/raxml/index.html">RAxML</a> to infer a maximum likelihood phylogenetic tree using the <em>GTRCAT</em> model like we did in lecture 2 and homework 1. Then visualize this tree using <a class="reference external" href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or one of the many other tree visualizing programs you can find via Google. The do the following: <strong>Include an image of your tree, and comment on whether it looks as you expected.</strong></p>
-</li>
-<li><p class="first">Use <a class="reference external" href="http://www.datamonkey.org/">DataMonkey</a> to test for positive selection using the <em>FEL</em> method. Answer the following: <strong>Where there any sites under positive selection? Where there any sites under purifying selection? Are these results what you expected? Include the full *FEL* report too.</strong></p>
-</li>
+<li><p>Use <a class="reference external" href="http://sco.h-its.org/exelixis/web/software/raxml/index.html">RAxML</a> to infer a maximum likelihood phylogenetic tree using the <em>GTRCAT</em> model like we did in lecture 2 and homework 1. Then visualize this tree using <a class="reference external" href="http://tree.bio.ed.ac.uk/software/figtree/">FigTree</a> or one of the many other tree visualizing programs you can find via Google. The do the following: <strong>Include an image of your tree, and comment on whether it looks as you expected.</strong></p></li>
+<li><p>Use <a class="reference external" href="http://www.datamonkey.org/">DataMonkey</a> to test for positive selection using the <em>FEL</em> method. Answer the following: <strong>Where there any sites under positive selection? Where there any sites under purifying selection? Are these results what you expected? Include the full *FEL* report too.</strong></p></li>
 </ol>
 </div></blockquote>
 </div>
@@ -80,18 +68,18 @@
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/homework_2/homework_2.txt"
+      <li><a href="../_sources/homework_2/homework_2.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="../search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -104,12 +92,12 @@
         <li class="right" style="margin-right: 10px">
           <a href="../genindex.html" title="General Index"
              >index</a></li>
-        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+        <li class="nav-item nav-item-0"><a href="../index.html">Genome Sciences 541 2014.04.17 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2014, Jesse Bloom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
+        &#169; Copyright 2014, Jesse Bloom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>
 </html>

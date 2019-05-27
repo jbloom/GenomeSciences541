@@ -1,5 +1,5 @@
 ===============================================
-Lecture 1 
+Lecture 1 details
 ===============================================
 
 * Genome Sciences 541, `Jesse Bloom`_
@@ -7,21 +7,20 @@ Lecture 1
 * These slides are at http://jbloom.github.io/GenomeSciences541/lecture_1.html
 
 * Reading for this lecture is :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`.
-  Read pages 97-114 and 147-152 carefully,
-  skim pages 115-146,
-  feel free to skip pages 153-end.
-
-* Here are the :download:`handwritten lecture 1 notes from the last part of the lecture. <readings/lecture_1_notes.pdf>`.
+  Read pages 97-114 and 147-152.
 
 Lecture 1: the evolution of protein-coding genes
-==================================================
+=================================================
+
+Pauling and Zuckerkandl
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`: one of the first molecular studies of protein evolution
 
 * Structure imposes many constraints
 
 * Very hard to quantitatively understand these constraints
 
-* Sequence divergence :math:`\ne` Functional divergence
+* *Sequence divergence* not equal to *Functional divergence*
 
 * A molecular clock?
 
@@ -98,19 +97,19 @@ They knew the sequences of a variety of homologous globins
 
 * human myoglobin
 
-* human hemoglobin :math:`\alpha`, :math:`\beta`, :math:`\gamma`, and :math:`\delta` chains
+* human hemoglobin alpha, beta, gamma, and delta chains
 
-* horse hemoglobin :math:`\alpha` and :math:`\beta` chains
+* horse hemoglobin alpha and beta chains
 
-* cattle hemoglobin :math:`\alpha` and :math:`\beta` chains
+* cattle hemoglobin alpha and beta chains
 
 * cattle fetal hemoglobin chain
 
-* pig hemoglobin :math:`\alpha` and :math:`\beta` chains
+* pig hemoglobin alpha and beta chains
 
-* gorilla :math:`\alpha` and :math:`\beta` chains
+* gorilla alpha and beta chains
 
-* carp hemoglobin :math:`\alpha` chain
+* carp hemoglobin alpha chain
 
 * lamprey hemoglobin chain
 
@@ -145,7 +144,7 @@ Very little sequence is strictly conserved
 
 Relatively few insertions and deletions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule, A deletion or addition in the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.* 
+*Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule. A deletion or addition in the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.* 
 
 :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
@@ -178,13 +177,20 @@ Different proteins evolve at different rates
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
-Zuckerkandl and Pauling propose a molecular clock 
+Zuckerkandl and Pauling's view of evolution
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. figure:: images/conclusions_1.png
    :width: 100%
    :align: center
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
+
+One key point (subject of next week)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+*Many such substitutions may lead to relatively little fuinctional change, whereas at other times the replacement of one single amino acid residue by another may lead to a radical functional change... Of course, the two aspects are not unrelated, since the functional effect of a given single substitution will frequently depend on the presence or absence of a number of other substitutions.*
+
+What do we call that phenomenon?
 
 Zuckerkandl and Pauling propose a molecular clock 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -200,68 +206,13 @@ Important implications
 
 * However, the constant background sequence change can make it difficult to pinpoint biologically important changes:
 
-    - *Positive selection* : for instance, take a look at `nextflu <http://nextflu.org/H3N2/>`_
+    - *Positive selection* : for instance, take a look at `nextflu <http://nextflu.org>`_
 
     - *Disease-causing mutations* 
 
-Quantitative phylogenetic analyses of protein-coding genes
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Today we will outline the approach
+Pauling and Zuckerkand's quantitative model
+--------------------------------------------
+* Their model is on :download:`pages 150 to 151 <readings/Zuckerkandl_and_Pauling-1965.pdf>`.
 
-* In the homework, you will perform some simple analyses and simulations
-
-* In the next three lectures, we will discuss various appproaches in molecular phylogenetics
-
-* There is a constant tension between *biochemical realism* and *analytical tractability*: many of the assumptions are made not because we think they are strictly true, but because we have to make them to do the analysis.
-
-The evolution studied in molecular phylogenetics is due to both mutation and selection
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-::
-
-    atg gtg ctc agc gag gga gaa tgg cag ttg gtt ctg cTc gtc ...
-    atg gtg ctc agc gag gga gaa tgA cag ttg gtt ctg cac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cag ttg gtt ctg cac gtc ...
-
-::
-
-    atg gtg Atc agc gag gga gaa tgg cag ttg gtt ctg cac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg cac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cag ttg gtA ctg cac gtc ...
-
-::
-
-    atg gtA ctc agc Cag gga gaa tgg cag ttg gtt ctg cac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg Aac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gtA ctg cac gtc ...
-
-::
-
-    atg atg cAc agc Cag gga gaa tgg cTg ttg gtt ctg cac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg Aac gtc ...
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gtA ctg cac gtc ...
-
-We will ignore the intra-population polymorphism
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-::
-
-    atg gtg ctc agc cag gga gaa tgg cag ttg gtt ctg cac gtc ...
-
-::
-
-    atg gtg ctc agc Cag gga gaa tgg cag ttg gtt ctg cac gtc ...
-
-::
-
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gtt ctg cac gtc ...
-
-::
-
-    atg gtg ctc agc Cag gga gaa tgg cTg ttg gta ctg cac gtc ...
-
-We ignore within-species variation, and treat the evolving populations as a single clonal sequence. This assumption may sometimes be problematic, as the frequency of an allele in a population is not necessarily equal to its probability of ultimately fixing. We are not going to worry about this problem here...
-
-Notes from rest of lecture
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-* Here are the :download:`handwritten lecture 1 notes from the last part of the lecture.<readings/lecture_1_notes.pdf>`.
-
+* Would we consider this model good today (based on what you learned in the Matsen lectures)?
 .. include:: weblinks.txt

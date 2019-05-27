@@ -1,39 +1,38 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
+<!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Lecture 3 &mdash; Genome Sciences 541 2014.04.17 documentation</title>
-    
+    <meta charset="utf-8" />
+    <title>Lecture 3 &#8212; Genome Sciences 541 2014.04.17 documentation</title>
     <link rel="stylesheet" href="_static/classic.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '2014.04.17',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="index.html" /> 
-  </head>
-  <body role="document">
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Lecture 4" href="lecture_4.html" />
+    <link rel="prev" title="Lecture 2" href="lecture_2.html" /> 
+  </head><body>
     <div class="related" role="navigation" aria-label="related navigation">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              accesskey="I">index</a></li>
-        <li class="nav-item nav-item-0"><a href="index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="lecture_4.html" title="Lecture 4"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="lecture_2.html" title="Lecture 2"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Genome Sciences 541 2014.04.17 documentation</a> &#187;</li> 
       </ul>
     </div>  
 
@@ -45,9 +44,9 @@
   <div class="section" id="lecture-3">
 <h1>Lecture 3<a class="headerlink" href="#lecture-3" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li>Genome Sciences 541, <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a></li>
-<li>These slides are at <a class="reference external" href="http://jbloom.github.io/GenomeSciences541/lecture_3.html">http://jbloom.github.io/GenomeSciences541/lecture_3.html</a></li>
-<li>Here are brief notes on codon substitution models. <a class="reference download internal" href="_downloads/lecture_3_notes.pdf" download=""><code class="xref download docutils literal"><span class="pre">hand-written</span> <span class="pre">lecture</span> <span class="pre">notes</span></code></a>.</li>
+<li><p>Genome Sciences 541, <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a></p></li>
+<li><p>These slides are at <a class="reference external" href="http://jbloom.github.io/GenomeSciences541/lecture_3.html">http://jbloom.github.io/GenomeSciences541/lecture_3.html</a></p></li>
+<li><p>Here are brief notes on codon substitution models. <a class="reference download internal" download="" href="_downloads/cfd479a0985fece35806d2e6d2f0d5e9/lecture_3_notes.pdf"><code class="xref download docutils literal notranslate"><span class="pre">hand-written</span> <span class="pre">lecture</span> <span class="pre">notes</span></code></a>.</p></li>
 </ul>
 </div>
 
@@ -57,21 +56,27 @@
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="lecture_2.html"
+                        title="previous chapter">Lecture 2</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="lecture_4.html"
+                        title="next chapter">Lecture 4</a></p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/lecture_3.txt"
+      <li><a href="_sources/lecture_3.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
 <div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
     </form>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -84,12 +89,18 @@
         <li class="right" style="margin-right: 10px">
           <a href="genindex.html" title="General Index"
              >index</a></li>
-        <li class="nav-item nav-item-0"><a href="index.html">Genome Sciences 541 2014.04.17 documentation</a> &raquo;</li> 
+        <li class="right" >
+          <a href="lecture_4.html" title="Lecture 4"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="lecture_2.html" title="Lecture 2"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Genome Sciences 541 2014.04.17 documentation</a> &#187;</li> 
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &copy; Copyright 2014, Jesse Bloom.
-      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.4.1.
+        &#169; Copyright 2014, Jesse Bloom.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.0.1.
     </div>
   </body>
 </html>

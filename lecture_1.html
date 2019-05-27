@@ -5,13 +5,13 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Lecture 1 &mdash; Genome Sciences 541 2014.04.17 documentation</title>
+    <title>Lecture 1 details &mdash; Genome Sciences 541 2014.04.17 documentation</title>
     
     <link rel="stylesheet" href="_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="_static/styles.css" type="text/css" />
     <link rel="stylesheet" href="_static/slides.css" type="text/css" />
-    
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
     
     
     
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <script type="text/javascript" src="_static/common.js"></script>
     
     <script type="text/javascript" src="_static/slides.js"></script>
@@ -36,7 +36,10 @@
     <script type="text/javascript" src="_static/init.js"></script>
     
     
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="index.html" />
+    <link rel="next" title="Lecture 2" href="lecture_2.html" />
     <link rel="prev" title="Genome Sciences 541" href="index.html" /> 
   </head>
   <body>
@@ -47,18 +50,15 @@
 
 
   
-<article class="slide level-1" id="lecture-1">
+<article class="slide level-1" id="lecture-1-details">
 
-<h1>Lecture 1</h1>
+<h1>Lecture 1 details</h1>
 
 <ul class="simple">
 <li>Genome Sciences 541, <a class="reference external" href="http://research.fhcrc.org/bloom/en.html">Jesse Bloom</a></li>
 <li>These slides are at <a class="reference external" href="http://jbloom.github.io/GenomeSciences541/lecture_1.html">http://jbloom.github.io/GenomeSciences541/lecture_1.html</a></li>
-<li>Reading for this lecture is <a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a>.
-Read pages 97-114 and 147-152 carefully,
-skim pages 115-146,
-feel free to skip pages 153-end.</li>
-<li>Here are the <a class="reference download internal" href="_downloads/lecture_1_notes.pdf" download=""><code class="xref download docutils literal"><span class="pre">handwritten</span> <span class="pre">lecture</span> <span class="pre">1</span> <span class="pre">notes</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">last</span> <span class="pre">part</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">lecture.</span></code></a>.</li>
+<li>Reading for this lecture is <a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a>.
+Read pages 97-114 and 147-152.</li>
 </ul>
 
 
@@ -69,11 +69,20 @@ feel free to skip pages 153-end.</li>
 
 <h2>Lecture 1: the evolution of protein-coding genes</h2>
 
+
+
+
+
+</article>
+<article class="slide level-3" id="pauling-and-zuckerkandl">
+
+<h3>Pauling and Zuckerkandl</h3>
+
 <ul class="simple">
-<li><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a>: one of the first molecular studies of protein evolution</li>
+<li><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a>: one of the first molecular studies of protein evolution</li>
 <li>Structure imposes many constraints</li>
 <li>Very hard to quantitatively understand these constraints</li>
-<li>Sequence divergence <span class="math">\(\ne\)</span> Functional divergence</li>
+<li><em>Sequence divergence</em> not equal to <em>Functional divergence</em></li>
 <li>A molecular clock?</li>
 </ul>
 
@@ -86,11 +95,11 @@ feel free to skip pages 153-end.</li>
 <h3>Genes evolve at the level of DNA (or RNA for some viruses)</h3>
 
 <p>We routinely abstract the complex molecule DNA to strings of letters with little loss of relevant information:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
 </pre></div>
 </div>
-<p><em>It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.</em> -- <a class="reference external" href="http://www.nature.com/nature/dna50/watsoncrick.pdf">Watson and Crick (1953)</a></p>
-<p><em>The translation from nucleic acid to protein proceeds in a sequential fashion according to a systematic code with relatively simple rules.</em> -- <a class="reference external" href="http://www.nobelprize.org/nobel_prizes/medicine/laureates/1968/nirenberg-lecture.pdf">Nirenberg (1968)</a></p>
+<p><em>It has not escaped our notice that the specific pairing we have postulated immediately suggests a possible copying mechanism for the genetic material.</em> – <a class="reference external" href="http://www.nature.com/nature/dna50/watsoncrick.pdf">Watson and Crick (1953)</a></p>
+<p><em>The translation from nucleic acid to protein proceeds in a sequential fashion according to a systematic code with relatively simple rules.</em> – <a class="reference external" href="http://www.nobelprize.org/nobel_prizes/medicine/laureates/1968/nirenberg-lecture.pdf">Nirenberg (1968)</a></p>
 
 
 
@@ -102,7 +111,7 @@ feel free to skip pages 153-end.</li>
 
 <p>The properties of proteins are <strong>not</strong> easily abstracted.</p>
 <p>Proteins are linear polymers encoded by DNA:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
 <span class="n">M</span>   <span class="n">V</span>   <span class="n">L</span>   <span class="n">S</span>   <span class="n">E</span>   <span class="n">G</span>   <span class="n">E</span>   <span class="n">W</span>   <span class="n">Q</span>   <span class="n">L</span>   <span class="n">V</span>   <span class="n">L</span>   <span class="n">H</span>   <span class="n">V</span>   <span class="o">...</span>
 </pre></div>
 </div>
@@ -116,11 +125,11 @@ feel free to skip pages 153-end.</li>
 
 <h3>Properties of proteins are not easily abstracted</h3>
 
-<div class="figure align-center" id="id4">
+<div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="_images/myoglobin_static.png"><img alt="_images/myoglobin_static.png" src="_images/myoglobin_static.png" style="width: 61%;" /></a>
 <p class="caption"><span class="caption-text"><a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/myoglobin_structure">PyMol analysis of myoglobin</a></span></p>
 <div class="legend">
-<em>Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.</em> -- <a class="reference external" href="http://www.chem.uwec.edu/Chem452_Media/pages/readings/media/Kendrew_et_al_1958.pdf">Kendrew et al (1958)</a></div>
+<em>Perhaps the most remarkable features of the molecule are its complexity and its lack of symmetry. The arrangement seems to be almost totally lacking in the kind of regularities which one instinctively anticipates, and it is more complicated than has been predicated by any theory of protein structure.</em> – <a class="reference external" href="http://www.chem.uwec.edu/Chem452_Media/pages/readings/media/Kendrew_et_al_1958.pdf">Kendrew et al (1958)</a></div>
 </div>
 
 
@@ -131,9 +140,9 @@ feel free to skip pages 153-end.</li>
 
 <h3>Context for reading Zuckerkandl and Pauling (1965)</h3>
 
-<div class="figure align-center" id="id5">
+<div class="figure align-center" id="id4">
 <a class="reference internal image-reference" href="_images/Zuckerkandl_and_Pauling-1965.png"><img alt="_images/Zuckerkandl_and_Pauling-1965.png" src="_images/Zuckerkandl_and_Pauling-1965.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text"><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
 </div>
 
 
@@ -144,7 +153,7 @@ feel free to skip pages 153-end.</li>
 
 <h3>They knew the structure of sperm whale myoglobin</h3>
 
-<div class="figure align-center" id="id6">
+<div class="figure align-center" id="id5">
 <a class="reference internal image-reference" href="_images/myoglobin_static.png"><img alt="_images/myoglobin_static.png" src="_images/myoglobin_static.png" style="width: 90%;" /></a>
 <p class="caption"><span class="caption-text"><a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/myoglobin_structure">PyMol analysis of myoglobin</a></span></p>
 <div class="legend">
@@ -159,12 +168,12 @@ Structure had been determined by <a class="reference external" href="http://www.
 
 <h3>They knew that single mutations could potentially have large biological consequences</h3>
 
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">MVHLTPEEKSAVT</span><span class="o">...</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MVHLTPEEKSAVT</span><span class="o">...</span>
 <span class="n">MVHLTPvEKSAVT</span><span class="o">...</span>
 </pre></div>
 </div>
-<p><a class="reference external" href="http://www.sciencemag.org/content/110/2865/543">&quot;Sickle Cell Anemia, a Molecular Disease&quot; (Pauling et al, 1949)</a></p>
-<p><a class="reference external" href="http://www.nature.com/nature/journal/v178/n4537/abs/178792a0.html">&quot;A Specific Chemical Difference between Globins of Normal and Sickle-cell Anemia Hemoglobins&quot; (Ingram, 1956)</a></p>
+<p><a class="reference external" href="http://www.sciencemag.org/content/110/2865/543">“Sickle Cell Anemia, a Molecular Disease” (Pauling et al, 1949)</a></p>
+<p><a class="reference external" href="http://www.nature.com/nature/journal/v178/n4537/abs/178792a0.html">“A Specific Chemical Difference between Globins of Normal and Sickle-cell Anemia Hemoglobins” (Ingram, 1956)</a></p>
 
 
 
@@ -177,13 +186,13 @@ Structure had been determined by <a class="reference external" href="http://www.
 <ul class="simple">
 <li>sperm whale myoglobin</li>
 <li>human myoglobin</li>
-<li>human hemoglobin <span class="math">\(\alpha\)</span>, <span class="math">\(\beta\)</span>, <span class="math">\(\gamma\)</span>, and <span class="math">\(\delta\)</span> chains</li>
-<li>horse hemoglobin <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span> chains</li>
-<li>cattle hemoglobin <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span> chains</li>
+<li>human hemoglobin alpha, beta, gamma, and delta chains</li>
+<li>horse hemoglobin alpha and beta chains</li>
+<li>cattle hemoglobin alpha and beta chains</li>
 <li>cattle fetal hemoglobin chain</li>
-<li>pig hemoglobin <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span> chains</li>
-<li>gorilla <span class="math">\(\alpha\)</span> and <span class="math">\(\beta\)</span> chains</li>
-<li>carp hemoglobin <span class="math">\(\alpha\)</span> chain</li>
+<li>pig hemoglobin alpha and beta chains</li>
+<li>gorilla alpha and beta chains</li>
+<li>carp hemoglobin alpha chain</li>
 <li>lamprey hemoglobin chain</li>
 </ul>
 
@@ -205,7 +214,7 @@ Structure had been determined by <a class="reference external" href="http://www.
 
 <h3>Myoglobin homologs</h3>
 
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="n">carp</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&gt;</span><span class="n">carp</span>
 <span class="n">MA</span><span class="o">----</span><span class="n">DHELVLKCWGGVEADFEGTGGEVLTRLFKQHPETQKLFPKFVGIA</span><span class="o">-</span><span class="n">QSDLAGNAAVKAHGATVLKSWASCLKARGDHAAILKPLATTHANTHKIALNNFRLITEVLVKVMAEKAGLD</span><span class="o">--</span><span class="n">AGGQSALRRVMDVVIGDIDTYYKEIGFAG</span>
 <span class="o">&gt;</span><span class="n">chicken</span>
 <span class="n">MGLSDQEWQQVLTIWGKVEADIAGHGHEVLMRLFHDHPETLDRFDKFKGLKTPDQMKGSEDLKKHGATVLTQLGKILKQKGNHESELKPLAQTHATKHKIPVKYLEFISEVIIKVIAEKHAADFGADSQAAMKKALELFRNDMASKYKEFGFQG</span>
@@ -235,7 +244,7 @@ Structure had been determined by <a class="reference external" href="http://www.
 
 <h3>Site variability among myoglobin homologs</h3>
 
-<div class="figure align-center" id="id7">
+<div class="figure align-center" id="id6">
 <a class="reference internal image-reference" href="_images/myoglobin_site_preferences_logoplot.jpg"><img alt="_images/myoglobin_site_preferences_logoplot.jpg" src="_images/myoglobin_site_preferences_logoplot.jpg" style="width: 91%;" /></a>
 <p class="caption"><span class="caption-text">Code /data to produce this figure at <a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/myoglobin_homologs">Analysis of myoglobin homologs</a></span></p>
 </div>
@@ -248,9 +257,9 @@ Structure had been determined by <a class="reference external" href="http://www.
 
 <h3>Very little sequence is strictly conserved</h3>
 
-<div class="figure align-center" id="id8">
+<div class="figure align-center" id="id7">
 <a class="reference internal image-reference" href="_images/invariant_sites.png"><img alt="_images/invariant_sites.png" src="_images/invariant_sites.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text"><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
 </div>
 
 
@@ -261,8 +270,8 @@ Structure had been determined by <a class="reference external" href="http://www.
 
 <h3>Relatively few insertions and deletions</h3>
 
-<p><em>Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule, A deletion or addition in the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.</em></p>
-<p><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></p>
+<p><em>Deletions or additions of one to several amino acid residues are expected to be eliminated by natural selection in a high proportion of cases. Those that are preserved should be mostly found at either end of a chain, at the end of helices, in short helices, or in nonhelical regions, notably in loops that may be shortened or lengthened without  affecting the steric relationships in the rest of the molecule. A deletion or addition in the middle of a long helix would result in so many simultaneous alterations in side-chain interactions that it is highly unlikely that the tertiary structure and the function of the molecule could survive such an event. The deletions or additions found in hemoglobin and myoglobin chains are compatible with these generalities.</em></p>
+<p><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></p>
 
 
 
@@ -272,9 +281,9 @@ Structure had been determined by <a class="reference external" href="http://www.
 
 <h3>Structure is highly conserved</h3>
 
-<div class="figure align-center" id="id9">
+<div class="figure align-center" id="id8">
 <a class="reference internal image-reference" href="_images/structural_conservation.png"><img alt="_images/structural_conservation.png" src="_images/structural_conservation.png" style="width: 90%;" /></a>
-<p class="caption"><span class="caption-text"><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
 </div>
 <p>This observation has stood the test of time. In fact, sequences with as little as 30-35% identity generally have
 very similar structures. See <a class="reference external" href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC1166865/?page=1">Chothia and Lesk (1984)</a> and <a class="reference external" href="http://cbio.mskcc.org/publications/papers/sander/038.pdf">Sander and Schneider (1991)</a>.</p>
@@ -287,7 +296,7 @@ very similar structures. See <a class="reference external" href="http://www.ncbi
 
 <h3>Structure is highly conserved</h3>
 
-<div class="figure align-center" id="id10">
+<div class="figure align-center" id="id9">
 <a class="reference internal image-reference" href="_images/sperm_whale_tuna_myoglobin_overlay_static.png"><img alt="_images/sperm_whale_tuna_myoglobin_overlay_static.png" src="_images/sperm_whale_tuna_myoglobin_overlay_static.png" style="width: 80%;" /></a>
 <p class="caption"><span class="caption-text"><a class="reference external" href="https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/myoglobin_structure">PyMol analysis of myoglobin</a></span></p>
 <div class="legend">
@@ -302,10 +311,35 @@ Structural alignment of sperm whale (gray) and yellowfin tuna (orange) myoglobin
 
 <h3>Different proteins evolve at different rates</h3>
 
-<div class="figure align-center" id="id11">
+<div class="figure align-center" id="id10">
 <a class="reference internal image-reference" href="_images/cytochrome_C.png"><img alt="_images/cytochrome_C.png" src="_images/cytochrome_C.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text"><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
 </div>
+
+
+
+
+</article>
+<article class="slide level-3" id="zuckerkandl-and-pauling-s-view-of-evolution">
+
+<h3>Zuckerkandl and Pauling’s view of evolution</h3>
+
+<div class="figure align-center" id="id11">
+<a class="reference internal image-reference" href="_images/conclusions_1.png"><img alt="_images/conclusions_1.png" src="_images/conclusions_1.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
+</div>
+
+
+
+
+</article>
+<article class="slide level-3" id="one-key-point-subject-of-next-week">
+
+<h3>One key point (subject of next week)</h3>
+
+<p><em>Many such substitutions may lead to relatively little fuinctional change, whereas at other times the replacement of one single amino acid residue by another may lead to a radical functional change… Of course, the two aspects are not unrelated, since the functional effect of a given single substitution will frequently depend on teh presence or absence of a number of other substitutions.</em></p>
+<p>What do we call that phenomenon?</p>
+<p><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></p>
 
 
 
@@ -316,21 +350,8 @@ Structural alignment of sperm whale (gray) and yellowfin tuna (orange) myoglobin
 <h3>Zuckerkandl and Pauling propose a molecular clock</h3>
 
 <div class="figure align-center" id="id12">
-<a class="reference internal image-reference" href="_images/conclusions_1.png"><img alt="_images/conclusions_1.png" src="_images/conclusions_1.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text"><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
-</div>
-
-
-
-
-</article>
-<article class="slide level-3" id="id2">
-
-<h3>Zuckerkandl and Pauling propose a molecular clock</h3>
-
-<div class="figure align-center" id="id13">
 <a class="reference internal image-reference" href="_images/conclusions_2.png"><img alt="_images/conclusions_2.png" src="_images/conclusions_2.png" style="width: 100%;" /></a>
-<p class="caption"><span class="caption-text"><a class="reference download internal" href="_downloads/Zuckerkandl_and_Pauling-1965.pdf" download=""><code class="xref download docutils literal"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
+<p class="caption"><span class="caption-text"><a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">Zuckerkandl</span> <span class="pre">and</span> <span class="pre">Pauling</span> <span class="pre">(1965)</span></code></a></span></p>
 </div>
 
 
@@ -339,7 +360,7 @@ Structural alignment of sperm whale (gray) and yellowfin tuna (orange) myoglobin
 </article>
 <article class="slide level-3" id="important-implications">
 
-<h3>Important implications</h3>
+<h3>Pauling and Zuckerkand’s quantitative model</h3>
 
 <ul>
 <li><p class="first">The extent of sequence change can be used to reconstruct evolutionary relationships (<em>molecular phylogenetics</em>)</p>
@@ -347,91 +368,18 @@ Structural alignment of sperm whale (gray) and yellowfin tuna (orange) myoglobin
 <li><p class="first">However, the constant background sequence change can make it difficult to pinpoint biologically important changes:</p>
 <blockquote>
 <div><ul class="simple">
-<li><em>Positive selection</em> : for instance, take a look at <a class="reference external" href="http://nextflu.org/H3N2/">nextflu</a></li>
+<li><em>Positive selection</em> : for instance, take a look at <a class="reference external" href="http://nextflu.org">nextflu</a></li>
 <li><em>Disease-causing mutations</em></li>
 </ul>
 </div></blockquote>
 </li>
 </ul>
-
-
-
-
-</article>
-<article class="slide level-3" id="quantitative-phylogenetic-analyses-of-protein-coding-genes">
-
-<h3>Quantitative phylogenetic analyses of protein-coding genes</h3>
-
+<div class="section level-4" id="pauling-and-zuckerkand-s-quantitative-model">
 <ul class="simple">
-<li>Today we will outline the approach</li>
-<li>In the homework, you will perform some simple analyses and simulations</li>
-<li>In the next three lectures, we will discuss various appproaches in molecular phylogenetics</li>
-<li>There is a constant tension between <em>biochemical realism</em> and <em>analytical tractability</em>: many of the assumptions are made not because we think they are strictly true, but because we have to make them to do the analysis.</li>
+<li>Their model is on <a class="reference download internal" download="" href="_downloads/3ee1df64df108692e89b7ed11bb5379c/Zuckerkandl_and_Pauling-1965.pdf"><code class="xref download docutils literal notranslate"><span class="pre">pages</span> <span class="pre">150</span> <span class="pre">to</span> <span class="pre">151</span></code></a>.</li>
+<li>Would we consider this model good today (based on what you learned in the Matsen lectures)?</li>
 </ul>
-
-
-
-
-</article>
-<article class="slide level-3" id="the-evolution-studied-in-molecular-phylogenetics-is-due-to-both-mutation-and-selection">
-
-<h3>The evolution studied in molecular phylogenetics is due to both mutation and selection</h3>
-
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cTc</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgA</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
 </div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">Atc</span> <span class="n">agc</span> <span class="n">gag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtA</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtA</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">Aac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtA</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">atg</span> <span class="n">cAc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">Aac</span> <span class="n">gtc</span> <span class="o">...</span>
-<span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtA</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-
-
-
-
-</article>
-<article class="slide level-3" id="we-will-ignore-the-intra-population-polymorphism">
-
-<h3>We will ignore the intra-population polymorphism</h3>
-
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cag</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gtt</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">atg</span> <span class="n">gtg</span> <span class="n">ctc</span> <span class="n">agc</span> <span class="n">Cag</span> <span class="n">gga</span> <span class="n">gaa</span> <span class="n">tgg</span> <span class="n">cTg</span> <span class="n">ttg</span> <span class="n">gta</span> <span class="n">ctg</span> <span class="n">cac</span> <span class="n">gtc</span> <span class="o">...</span>
-</pre></div>
-</div>
-<p>We ignore within-species variation, and treat the evolving populations as a single clonal sequence. This assumption may sometimes be problematic, as the frequency of an allele in a population is not necessarily equal to its probability of ultimately fixing. We are not going to worry about this problem here...</p>
-
-
-
-
-</article>
-<article class="slide level-3" id="notes-from-rest-of-lecture">
-
-<h3>Notes from rest of lecture</h3>
-
-<ul class="simple">
-<li>Here are the <a class="reference download internal" href="_downloads/lecture_1_notes.pdf" download=""><code class="xref download docutils literal"><span class="pre">handwritten</span> <span class="pre">lecture</span> <span class="pre">1</span> <span class="pre">notes</span> <span class="pre">from</span> <span class="pre">the</span> <span class="pre">last</span> <span class="pre">part</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">lecture.</span></code></a>.</li>
-</ul>
-
 
 
 

@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/styles.css" type="text/css" />
     <link rel="stylesheet" href="../_static/slides.css" type="text/css" />
-    
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
     
     
     
@@ -27,7 +27,7 @@
     <script type="text/javascript" src="../_static/jquery.js"></script>
     <script type="text/javascript" src="../_static/underscore.js"></script>
     <script type="text/javascript" src="../_static/doctools.js"></script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
     <script type="text/javascript" src="../_static/common.js"></script>
     
     <script type="text/javascript" src="../_static/slides.js"></script>
@@ -36,6 +36,8 @@
     <script type="text/javascript" src="../_static/init.js"></script>
     
     
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="top" title="Genome Sciences 541 2014.04.17 documentation" href="../index.html" /> 
   </head>
   <body>
@@ -78,10 +80,10 @@
 <h2>Input files</h2>
 
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">./genes/</span></code> is a subdirectory that contains the coding DNA sequences of a variety of myoglobin homologs.</li>
-<li><code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> of sperm whale myoglobin renumbered to begin with 1 at the N-terminal methionine and proceed sequentially from there. The original <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> begins with 1 at the second valine, hence the need for renumbering.</li>
-<li><code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> gives the results of analyzing <code class="docutils literal"><span class="pre">1MBN_renumbered.pdb</span></code> with the <a class="reference external" href="http://www.cmbi.ru.nl/hsspsoap/">DSSP webserver</a> to calculate secondary structure and solvent accessibility.</li>
-<li><code class="docutils literal"><span class="pre">compare_homologs.py</span></code> is the master <a class="reference external" href="https://www.python.org/">Python</a> script that runs the analysis in this directory.</li>
+<li><code class="docutils literal notranslate"><span class="pre">./genes/</span></code> is a subdirectory that contains the coding DNA sequences of a variety of myoglobin homologs.</li>
+<li><code class="docutils literal notranslate"><span class="pre">1MBN_renumbered.pdb</span></code> is PDB file <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> of sperm whale myoglobin renumbered to begin with 1 at the N-terminal methionine and proceed sequentially from there. The original <a class="reference external" href="http://www.pdb.org/pdb/explore/explore.do?structureId=1MBN">1MBN</a> begins with 1 at the second valine, hence the need for renumbering.</li>
+<li><code class="docutils literal notranslate"><span class="pre">1MBN_renumbered.pdb</span></code> gives the results of analyzing <code class="docutils literal notranslate"><span class="pre">1MBN_renumbered.pdb</span></code> with the <a class="reference external" href="http://www.cmbi.ru.nl/hsspsoap/">DSSP webserver</a> to calculate secondary structure and solvent accessibility.</li>
+<li><code class="docutils literal notranslate"><span class="pre">compare_homologs.py</span></code> is the master <a class="reference external" href="https://www.python.org/">Python</a> script that runs the analysis in this directory.</li>
 </ul>
 
 
@@ -93,7 +95,7 @@
 <h2>Running the analysis</h2>
 
 <p>To run the analysis, simply type the following at the command line:</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">compare_homologs</span><span class="o">.</span><span class="n">py</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">compare_homologs</span><span class="o">.</span><span class="n">py</span>
 </pre></div>
 </div>
 <p>If you have installed the <a class="reference internal" href="#programs-used">Programs used</a>, this will generate all of the remaining output.</p>
