@@ -200,6 +200,11 @@ Zuckerkandl and Pauling propose a molecular clock
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
+A striking example of the molecular clock
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`Figure 6 of dos Reis et al (2009) <readings/dos_Reis_et_al-2009.pdf>`
+
 Important implications
 ~~~~~~~~~~~~~~~~~~~~~~~~
 * The extent of sequence change can be used to reconstruct evolutionary relationships (*molecular phylogenetics*)

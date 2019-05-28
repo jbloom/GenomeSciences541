@@ -188,11 +188,9 @@ Zuckerkandl and Pauling's view of evolution
 One key point (subject of next week)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-*Many such substitutions may lead to relatively little fuinctional change, whereas at other times the replacement of one single amino acid residue by another may lead to a radical functional change... Of course, the two aspects are not unrelated, since the functional effect of a given single substitution will frequently depend on teh presence or absence of a number of other substitutions.*
+*Many such substitutions may lead to relatively little fuinctional change, whereas at other times the replacement of one single amino acid residue by another may lead to a radical functional change... Of course, the two aspects are not unrelated, since the functional effect of a given single substitution will frequently depend on the presence or absence of a number of other substitutions.*
 
 What do we call that phenomenon?
-
-:download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
 
 Zuckerkandl and Pauling propose a molecular clock 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -201,6 +199,11 @@ Zuckerkandl and Pauling propose a molecular clock
    :align: center
 
    :download:`Zuckerkandl and Pauling (1965) <readings/Zuckerkandl_and_Pauling-1965.pdf>`
+
+A striking example of the molecular clock
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+:download:`Figure 6 of dos Reis et al (2009) <readings/dos_Reis_et_al-2009.pdf>`
 
 Important implications
 ~~~~~~~~~~~~~~~~~~~~~~~~
