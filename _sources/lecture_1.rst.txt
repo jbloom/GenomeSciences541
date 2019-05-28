@@ -215,9 +215,9 @@ Important implications
 
     - *Disease-causing mutations* 
 
-Pauling and Zuckerkand's quantitative model
---------------------------------------------
-* Their model is on :download:`pages 150 to 151 <readings/Zuckerkandl_and_Pauling-1965.pdf>`.
+Hand-written notes
+~~~~~~~~~~~~~~~~~~~
 
-* Would we consider this model good today (based on what you learned in the Matsen lectures)?
+:download:`here are the hand-written notes from the second half of class <readings/lecture_1_notes_new.pdf>`
+
 .. include:: weblinks.txt
