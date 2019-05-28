@@ -218,6 +218,6 @@ Important implications
 Hand-written notes
 ~~~~~~~~~~~~~~~~~~~
 
-:download:`here are the hand-written notes from the second half of class <readings/lecture_1_notes_new.pdf>`
+:download:`notes from the second half of class <readings/lecture_1_notes_new.pdf>`
 
 .. include:: weblinks.txt
