@@ -4,10 +4,14 @@ Lecture 2
 
 * Genome Sciences 541, `Jesse Bloom`_
 
-* These slides are at http://jbloom.github.io/GenomeSciences541/lecture_2.html
+* The Jupyter notebook with the example and homework is on `mybinder <https://mybinder.org/>`_ at https://mybinder.org/v2/gh/jbloom/GenomeSciences541/gh-pages?filepath=positive_selection%2Fnotebook.ipynb
 
-* The lecture was done on the board. Here are the :download:`hand-written notes <readings/lecture_2_notes.pdf>`.
+* For **next** class (Thursday), read the following two papers:
 
-* The first homework is at https://github.com/jbloom/GenomeSciences541/tree/gh-pages/source/homework_1
+  - https://elifesciences.org/articles/00631
+
+  - https://www.pnas.org/content/115/32/E7550
+
+
 
 .. include:: weblinks.txt
